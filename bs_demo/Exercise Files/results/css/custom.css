@@ -1,4 +1,7 @@
 /*custom file here */
+body{
+	padding-top:70px;
+}
 footer{
 	padding: 2em 0;
 	margin: 3em 0;
@@ -22,4 +25,20 @@ footer{
 
 .breadcrumb > li + li:before {
   content: none;
+}
+
+.navbar-inverse .navbar-toggle {
+	color: white;
+	font-weight: bold;
+	border-color: white;
+}
+.navbar-inverse .navbar-toggle:hover {
+	background-color: #ddd;
+	color: #333;
+}
+.navbar-inverse .navbar-toggle .glyphicon {
+	color: white;
+}
+.navbar-inverse .navbar-toggle:hover .glyphicon {
+	color: #333;
 }

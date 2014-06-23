@@ -13,15 +13,28 @@
 <body>
 <div class="container">
 	<!-- row 1: navigation -->
-    <nav class="row">
-    	<ul class="nav nav-pills nav-justified">
-        	<li><a href="#">Home</a></li>
-        	<li><a href="#">About</a></li>
-        	<li class="active"><a href="#">Services</a></li>
-        	<li><a href="#">Photo Gallery</a></li>
-        	<li><a href="#">Contact</a></li>  
-        </ul>  
-    </nav>
+    <div class="row">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <!--下面的button是用来在响应式按钮时，点击弹出菜单用的-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="active"><a href="#">Services</a></li>
+                    <li><a href="#">Photo Gallery</a></li>
+                    <li><a href="#">Contact</a></li>  
+                </ul> 
+            </div>
+        </nav> 
+    </div>
    
     <!-- row 2: header -->
     <header class="row">
