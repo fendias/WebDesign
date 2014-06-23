@@ -19,3 +19,7 @@ footer{
 .pull-right.img-responsive{
 	margin: 0 0 1em 1em; /*TRBL*/
 }
+
+.breadcrumb > li + li:before {
+  content: none;
+}
