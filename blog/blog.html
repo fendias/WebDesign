@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>blog</title>
+
+    <link rel="stylesheet"  type="text/css" href="static/css/bootstrap.min.css">
+    <style>
+    .brand-title,
+    .brand-tagline {
+        margin: 0;
+    }
+    .brand-title {
+        text-transform: uppercase;
+    }
+    .brand-tagline {
+        font-weight: 300;
+        color: rgb(176, 202, 219);
+    }
+    .sidebar{
+        background: rgb(61, 79, 93);
+        color: #fff;
+    }
+    @media (min-width: 48em) {
+        .content {
+            padding: 2em 3em 0;
+            margin-left: 25%;
+        }
+
+        .header {
+            margin: 80% 2em 0;
+            text-align: right;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="sidebar col-md-3">
+                <div class="header">
+                    <h1 class="brand-title">A Sample Blog</h1>
+                    <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+                    <ul class="nav nav-pills">
+                        <li>
+                            <a class="button" href="http://purecss.io">Pure</a>
+                        </li>
+                        <li>
+                            <a class="button" href="http://yuilibrary.com">YUI Library</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md=9"></div>
+        </div>
+    </div>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+</body>
+</html>
