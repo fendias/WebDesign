@@ -38,8 +38,8 @@ body{
             }
 
             &:hover, &:active{
-            color:#D90;
-            text-decoration: none;
+                color:#D90;
+                text-decoration: none;
             }
         }
 
@@ -73,6 +73,72 @@ body{
             }
         }
     }
+
+    .nav{
+        @nav_h:40px;
+        @nav_w:10px;
+        height:@nav_h;
+        clear: both;
+
+        &_left, &_mid, &_right{
+            height: @nav_h;
+            float:left;
+        }
+
+        &_left{
+            width:@nav_w;
+            background: url(../images/nav_left.jpg) no-repeat;
+            // background-image: url(../images/nav_left.jpg);
+            // background-repeat: no-repeat;
+        }
+
+        &_mid{
+            width: 980px;
+            background: url(../images/nav_bg.jpg) repeat-x;
+
+            &_left, &_right{
+                float:left;
+            }
+
+            &_left{
+                width:680px;
+
+                li{
+                    float: left;
+                    list-style: none;
+                    width:100px;
+                    text-align: center;
+                    line-height: 40px;
+                }
+
+                a{
+                    &:link, &:visited{
+                        text-decoration: none;
+                        color:#FFF;
+                        font-size: 16px;
+                        font-family: "微软雅黑";
+                    }
+
+                    &:hover, &:active{
+                        text-decoration: none;
+                        color:#FF0;
+                        font-size: 16px;
+                        font-family: "微软雅黑";
+                    }
+                }
+            }
+
+            &_right{
+                width:300px;
+            }
+        }
+
+        &_right{
+            width: @nav_w;
+            background: url(../images/nav_right.jpg) no-repeat;
+        }
+    }
+
 }
 
 .tel{
@@ -80,3 +146,17 @@ body{
     font-size: 16px;
     color: #C00;
 }
+
+.search_text{
+    width:190px;
+    height:25px;
+    padding-right: 25px;
+    background:url(../images/search.jpg) no-repeat right center;
+    background-color: #FFF;
+    margin-top: 7px;
+    boader: 1px solid #FFF;
+}
+
+
+
+
