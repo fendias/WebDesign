@@ -50,3 +50,31 @@ body {
   color: #D90;
   text-decoration: none;
 }
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #FFF;
+}
+.wrap .logo {
+  height: 80px;
+}
+.wrap .logo_left {
+  width: 200px;
+  float: left;
+}
+.wrap .logo_right {
+  width: 300px;
+  float: right;
+  height: 28px;
+  margin-top: 30px;
+  color: #8E8E8E;
+}
+.wrap .logo_right img {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.tel {
+  font-family: "微软雅黑";
+  font-size: 16px;
+  color: #C00;
+}
