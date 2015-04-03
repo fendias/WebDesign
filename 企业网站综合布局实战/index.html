@@ -7,6 +7,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <script src="js/myFocus-2.0.1.min.js"></script>
+    <script src="js/mf-pattern/mF_YSlider.js"></script>
+    <link rel="stylesheet" href="js/mf-pattern/mF_YSlider.css">
+    <script>
+        myFocus.set({
+            id:'picBox'
+        });
+    </script>
 </head>
 <body>
  <div class="top">
@@ -47,6 +55,17 @@
      </div><!-- nav_mid结束 -->
      <div class="nav_right"></div>
  </div><!-- nav结束 -->
+
+ <div class="ad" id="picBox">
+     <div class="loading"><img src="images/loading.gif" alt="图片加载中"></div>
+     <div class="pic">
+         <ul>
+             <li><img src="images/ad2.jpg" alt=""></li>
+             <li><img src="images/ad3.jpg" alt=""></li>
+             <li><img src="images/ad4.jpg" alt=""></li>
+         </ul>
+     </div>
+ </div><!-- ad结束 -->
 </div><!-- wrap结束 -->
 
 </body>

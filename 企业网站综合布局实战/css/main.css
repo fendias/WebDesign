@@ -126,6 +126,11 @@ body {
   width: 10px;
   background: url(../images/nav_right.jpg) no-repeat;
 }
+.wrap .ad {
+  height: 310px;
+  overflow: hidden;
+  margin-top: 5px;
+}
 .tel {
   font-family: "微软雅黑";
   font-size: 16px;
