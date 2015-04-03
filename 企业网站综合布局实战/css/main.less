@@ -1,12 +1,41 @@
 @charset "utf-8";
 
 .reset(){
-  *{margin:0; padding:0;}
+  *{margin:0; padding:0; font-size:12px;}
   li{list-style:none;}
   img{border:none;}
   input,select,textarea{outline:none; border:none; background:none;}
   textarea{resize:none;}
   a{text-decoration:none;}
+}
+
+//新闻列表
+.news_list(){
+    margin-top: 20px;
+    li{   
+        list-style-type: none;
+        background: url(../images/list.jpg) no-repeat; 
+        padding-left: 10px;
+        margin: 8px;
+        border-bottom: 1px dotted #CCC;
+
+        a{
+            &:link, &:visited{
+                text-decoration: none;
+                color: #000;
+            }
+
+            &:hover, &:active{
+                text-decoration: none;
+                color: #F00;
+            }
+        }
+
+        span{
+            color: #999;
+            float: right;
+        }
+    }
 }
 
 .reset();
@@ -15,6 +44,7 @@ body{
     background-color: #F5F5F5;
 }
 
+//头信息
 .top{
     width: 100%;
     height:27px;
@@ -47,19 +77,23 @@ body{
     }
 }
 
+//页面区域
 .wrap{
     width:1000px;
     margin: 0 auto;
 
+    //logo区
     .logo{
         height: 80px;
         background-color: #FFF;
 
+        //左侧公司图标
         &_left{
             width:200px;
             float:left;
         }
 
+        //右侧热线
         &_right{
             width:300px;
             float:right;
@@ -74,17 +108,20 @@ body{
         }
     }
 
+    //导航栏
     .nav{
         @nav_h:40px;
         @nav_w:10px;
         height:@nav_h;
         clear: both;
 
+        //导航栏统一高度
         &_left, &_mid, &_right{
             height: @nav_h;
             float:left;
         }
 
+        //左侧圆角
         &_left{
             width:@nav_w;
             background: url(../images/nav_left.jpg) no-repeat;
@@ -92,6 +129,7 @@ body{
             // background-repeat: no-repeat;
         }
 
+        //中间菜单
         &_mid{
             width: 980px;
             background: url(../images/nav_bg.jpg) repeat-x;
@@ -100,15 +138,17 @@ body{
                 float:left;
             }
 
+            //菜单栏
             &_left{
                 width:680px;
 
+                //菜单项
                 li{
-                    float: left;
-                    list-style: none;
-                    width:100px;
-                    text-align: center;
-                    line-height: 40px;
+                    float: left; //放在同一行
+                    list-style: none; //去除默认样式
+                    width:100px; //宽度
+                    text-align: center; //字体居中
+                    line-height: 40px; //垂直居中
                 }
 
                 a{
@@ -127,24 +167,28 @@ body{
                     }
                 }
             }
-
+            
+            //右侧搜索栏
             &_right{
                 width:300px;
             }
         }
 
+        //右侧圆角
         &_right{
             width: @nav_w;
             background: url(../images/nav_right.jpg) no-repeat;
         }
     }
 
+    //焦点图
     .ad{
         height: 310px;
         overflow: hidden;
         margin-top: 5px;
     }
 
+    //信息展示区
     .main{
         height:250px;
         margin-top: 5px;
@@ -155,19 +199,22 @@ body{
         height: 250px;
         float:left;
     }
-
+    
+    //新闻中心
     .news{
         width:340px;
         border: 1px solid #E8E8E8;
         background-color: #FFF;
 
+        //标题
         .title{
             height: 35px;
             border-bottom: 2px solid #E8E8E8;
-
+            
+            //新闻中心
             &_left{
                 width: 70%;
-                line-height: 35px; //居中
+                line-height: 35px; //垂直居中
                 font-family: "微软雅黑";
                 font-size: 14px;
                 font-weight: bold;
@@ -176,6 +223,7 @@ body{
                 padding-left: 20px;
             }
 
+            //更多
             &_right{
                 width:20%;
                 line-height: 35px;
@@ -192,6 +240,27 @@ body{
                 }
             }
         }
+
+        //图片新闻
+        .pic_news{
+            height:80px;
+            margin-top: 10px;
+            line-height: 22px; //设置行高
+            img{
+                float: left;
+                margin: 0 5px;
+            }
+
+            a{
+                color:#C00;
+                text-decoration: none;
+            }
+        }
+
+        //新闻列表
+        .news_list{
+            .news_list();
+        }
     }
 
     .course{
@@ -207,12 +276,14 @@ body{
     }
 }
 
+//电话
 .tel{
     font-family: "微软雅黑";
     font-size: 16px;
     color: #C00;
 }
 
+//带图标的搜索框
 .search_text{
     width:190px;
     height:25px;

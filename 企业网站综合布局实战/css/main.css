@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 12px;
 }
 li {
   list-style: none;
@@ -174,6 +175,43 @@ body {
   font-size: 10px;
   font-weight: normal;
   padding-right: 10px;
+}
+.wrap .news .pic_news {
+  height: 80px;
+  margin-top: 10px;
+  line-height: 22px;
+}
+.wrap .news .pic_news img {
+  float: left;
+  margin: 0 5px;
+}
+.wrap .news .pic_news a {
+  color: #C00;
+  text-decoration: none;
+}
+.wrap .news .news_list {
+  margin-top: 20px;
+}
+.wrap .news .news_list li {
+  list-style-type: none;
+  background: url(../images/list.jpg) no-repeat;
+  padding-left: 10px;
+  margin: 8px;
+  border-bottom: 1px dotted #CCC;
+}
+.wrap .news .news_list li a:link,
+.wrap .news .news_list li a:visited {
+  text-decoration: none;
+  color: #000;
+}
+.wrap .news .news_list li a:hover,
+.wrap .news .news_list li a:active {
+  text-decoration: none;
+  color: #F00;
+}
+.wrap .news .news_list li span {
+  color: #999;
+  float: right;
 }
 .wrap .course {
   width: 410px;
