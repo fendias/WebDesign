@@ -145,7 +145,35 @@ body {
 .wrap .news {
   width: 340px;
   border: 1px solid #E8E8E8;
-  background-color: #DAF;
+  background-color: #FFF;
+}
+.wrap .news .title {
+  height: 35px;
+  border-bottom: 2px solid #E8E8E8;
+}
+.wrap .news .title_left {
+  width: 70%;
+  line-height: 35px;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold;
+  color: #786F66;
+  float: left;
+  padding-left: 20px;
+}
+.wrap .news .title_right {
+  width: 20%;
+  line-height: 35px;
+  float: right;
+  text-align: right;
+}
+.wrap .news .title_right a {
+  text-decoration: none;
+  color: #999999;
+  font-family: "宋体";
+  font-size: 10px;
+  font-weight: normal;
+  padding-right: 10px;
 }
 .wrap .course {
   width: 410px;
