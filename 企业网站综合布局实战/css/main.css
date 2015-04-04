@@ -218,7 +218,15 @@ body {
 }
 .wrap .sidebar {
   width: 230px;
-  background-color: #333;
+}
+.wrap .sidebar .video {
+  height: 185px;
+  margin-bottom: 10px;
+  border: 1px solid #E8E8E8;
+}
+.wrap .sidebar .video_content {
+  height: 150px;
+  text-align: center;
 }
 .tel {
   font-family: "微软雅黑";
@@ -261,4 +269,8 @@ body {
   font-size: 10px;
   font-weight: normal;
   padding-right: 10px;
+}
+.service {
+  height: 55px;
+  border: 1px solid #E8E8E8;
 }
