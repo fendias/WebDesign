@@ -38,6 +38,22 @@
     }
 }
 
+//图片内容
+.pic_content(@pic_height){
+    height:@pic_height;
+    margin-top: 10px;
+    line-height: 22px; //设置行高
+    img{
+        float: left;
+        margin: 0 5px;
+    }
+
+    a{
+        color:#C00;
+        text-decoration: none;
+    }
+}
+
 .reset();
 
 body{
@@ -192,7 +208,7 @@ body{
     .main{
         height:250px;
         margin-top: 5px;
-        background-color: #23E;
+        background-color: #FFF;
     }
 
     .news, .course, .sidebar{
@@ -205,41 +221,6 @@ body{
         width:340px;
         border: 1px solid #E8E8E8;
         background-color: #FFF;
-
-        //标题
-        .title{
-            height: 35px;
-            border-bottom: 2px solid #E8E8E8;
-            
-            //新闻中心
-            &_left{
-                width: 70%;
-                line-height: 35px; //垂直居中
-                font-family: "微软雅黑";
-                font-size: 14px;
-                font-weight: bold;
-                color: #786F66;
-                float: left; 
-                padding-left: 20px;
-            }
-
-            //更多
-            &_right{
-                width:20%;
-                line-height: 35px;
-                float:right;
-                text-align: right;
-
-                a{
-                    text-decoration: none;
-                    color: #999999;
-                    font-family: "宋体";
-                    font-size: 10px;
-                    font-weight: normal;
-                    padding-right: 10px;
-                }
-            }
-        }
 
         //图片新闻
         .pic_news{
@@ -267,7 +248,25 @@ body{
         width: 410px;
         border: 1px solid #E8E8E8;
         margin: 0 7px;
-        background-color: #AEF;
+
+        &_pic{
+            .pic_content(120px);
+        }
+
+        &_type{
+            height: 37px;
+            width: 372px;
+            background: url(../images/product_type_bg.jpg) no-repeat;
+            margin: 20px auto;
+
+            li{
+                list-style-type: none;
+                float: left;
+                line-height: 37px;
+                margin: 0 15px;
+                text-align: center;
+            }
+        }
     }
 
     .sidebar{
@@ -292,6 +291,41 @@ body{
     background-color: #FFF;
     margin-top: 7px;
     boader: 1px solid #FFF;
+}
+
+//标题
+.title{
+    height: 35px;
+    border-bottom: 2px solid #E8E8E8;
+    
+    //新闻中心
+    &_left{
+        width: 70%;
+        line-height: 35px; //垂直居中
+        font-family: "微软雅黑";
+        font-size: 14px;
+        font-weight: bold;
+        color: #786F66;
+        float: left; 
+        padding-left: 20px;
+    }
+
+    //更多
+    &_right{
+        width:20%;
+        line-height: 35px;
+        float:right;
+        text-align: right;
+
+        a{
+            text-decoration: none;
+            color: #999999;
+            font-family: "宋体";
+            font-size: 10px;
+            font-weight: normal;
+            padding-right: 10px;
+        }
+    }
 }
 
 

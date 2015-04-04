@@ -135,7 +135,7 @@ body {
 .wrap .main {
   height: 250px;
   margin-top: 5px;
-  background-color: #23E;
+  background-color: #FFF;
 }
 .wrap .news,
 .wrap .course,
@@ -147,34 +147,6 @@ body {
   width: 340px;
   border: 1px solid #E8E8E8;
   background-color: #FFF;
-}
-.wrap .news .title {
-  height: 35px;
-  border-bottom: 2px solid #E8E8E8;
-}
-.wrap .news .title_left {
-  width: 70%;
-  line-height: 35px;
-  font-family: "微软雅黑";
-  font-size: 14px;
-  font-weight: bold;
-  color: #786F66;
-  float: left;
-  padding-left: 20px;
-}
-.wrap .news .title_right {
-  width: 20%;
-  line-height: 35px;
-  float: right;
-  text-align: right;
-}
-.wrap .news .title_right a {
-  text-decoration: none;
-  color: #999999;
-  font-family: "宋体";
-  font-size: 10px;
-  font-weight: normal;
-  padding-right: 10px;
 }
 .wrap .news .pic_news {
   height: 80px;
@@ -217,7 +189,32 @@ body {
   width: 410px;
   border: 1px solid #E8E8E8;
   margin: 0 7px;
-  background-color: #AEF;
+}
+.wrap .course_pic {
+  height: 120px;
+  margin-top: 10px;
+  line-height: 22px;
+}
+.wrap .course_pic img {
+  float: left;
+  margin: 0 5px;
+}
+.wrap .course_pic a {
+  color: #C00;
+  text-decoration: none;
+}
+.wrap .course_type {
+  height: 37px;
+  width: 372px;
+  background: url(../images/product_type_bg.jpg) no-repeat;
+  margin: 20px auto;
+}
+.wrap .course_type li {
+  list-style-type: none;
+  float: left;
+  line-height: 37px;
+  margin: 0 15px;
+  text-align: center;
 }
 .wrap .sidebar {
   width: 230px;
@@ -236,4 +233,32 @@ body {
   background-color: #FFF;
   margin-top: 7px;
   boader: 1px solid #FFF;
+}
+.title {
+  height: 35px;
+  border-bottom: 2px solid #E8E8E8;
+}
+.title_left {
+  width: 70%;
+  line-height: 35px;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  font-weight: bold;
+  color: #786F66;
+  float: left;
+  padding-left: 20px;
+}
+.title_right {
+  width: 20%;
+  line-height: 35px;
+  float: right;
+  text-align: right;
+}
+.title_right a {
+  text-decoration: none;
+  color: #999999;
+  font-family: "宋体";
+  font-size: 10px;
+  font-weight: normal;
+  padding-right: 10px;
 }
