@@ -371,6 +371,7 @@ body {
   _height: 350px;
   border: 1px solid #E8E8E8;
   float: right;
+  background-color: #FFF;
 }
 .list_box h2 {
   height: 35px;
@@ -380,6 +381,23 @@ body {
   color: #666;
   background: url(../images/type_bg.png) repeat-x;
   padding-left: 20px;
+}
+.list_box h1 {
+  font-family: "微软雅黑";
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
+}
+.list_box_newsInfo {
+  color: #666;
+  text-align: center;
+  border-bottom: 1px dotted #666;
+}
+.list_box_newsContent {
+  font-size: 14px;
+  padding: 20px;
+  line-height: 25px;
+  text-indent: 2em;
 }
 .news_list {
   margin-top: 20px;
