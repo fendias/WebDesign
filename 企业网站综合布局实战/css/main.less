@@ -303,7 +303,7 @@ body{
     boader: 1px solid #FFF;
 }
 
-//标题
+//区域标题
 .title{
     height: 35px;
     border-bottom: 2px solid #E8E8E8;
@@ -343,6 +343,7 @@ body{
     border: 1px solid #E8E8E8;
 }
 
+//版权区
 .copyright{
     clear: both;
     width:100%;
@@ -351,6 +352,7 @@ body{
     margin-top: 10px;
 }
 
+//版权内容区
 .copyright_content{
     width: 1000px;
     margin: 0 auto;
@@ -375,3 +377,104 @@ body{
 }
 
 
+/*--------------------新闻列表页----------------------------*/
+.list_main{
+    height: 350px;
+    background-color: #FFF;
+    margin-top: 10px;
+}
+
+//新闻类别
+.news_type{
+    width:220px;
+    min-height: 350px;
+    _height: 350px;
+    border: 1px solid #E8E8E8;
+    float: left;
+
+    //新闻类别头部标题
+    h2{
+        height:35px;
+        line-height: 35px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        color: #666;
+        background: url(../images/title_bg.gif) repeat-x;
+        padding-left: 20px;
+    }
+
+    //列表区域
+    &_content{
+        height: 265px;
+        background: url(../images/content_bg.gif) repeat-x;
+
+        li{
+            list-style-type: none;
+            height: 30px;
+            line-height: 30px;
+
+            a {
+                color: #666;
+                text-decoration: none;
+                background: url(../images/li_bg.gif) no-repeat left center; //图像左侧居中
+                padding-left: 15px;
+                display: block;
+
+                &:hover{
+                    color: #009CDF;
+                    background: url(../images/li_bg2.gif) no-repeat left center;
+                    background-color: #F2F2F2; //即设置背景图像又设置背景颜色
+                }
+            }
+        }
+    }
+}
+
+//新闻列表区域
+.list_box{
+    width: 770px;
+    min-height: 350px;
+    _height: 350px;
+    border: 1px solid #E8E8E8;
+    float: right;
+
+        //新闻类别头部标题
+    h2{
+        height:35px;
+        line-height: 35px;
+        font-size: 14px;
+        font-family: "微软雅黑";
+        color: #666;
+        background: url(../images/type_bg.png) repeat-x;
+        padding-left: 20px;
+    }
+}
+
+//新闻列表
+.news_list{
+    .news_list();
+}
+
+//页码
+.page{
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+
+    a{
+        border: 1px solid #E8E8E8;
+        text-decoration: none;
+        margin: 5px;
+        padding: 5px 10px;
+        display: inline-block; //行内块级元素
+
+        &:link, &:visited{
+            color: #000;
+        }
+
+        &:hover, &:active{
+            color: #FFF;
+            background-color: #cc1b1b;
+        }
+    }
+}
