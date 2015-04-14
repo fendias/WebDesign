@@ -1,0 +1,328 @@
+@charset "utf-8";
+
+.reset(){
+	*{margin:0; padding:0; font-size:14px;}
+	li{list-style-type:none;}
+	img{border:none;}
+	input,select,textarea{outline:none; border:none; background:none;}
+	textarea{resize:none;}
+	//a{text-decoration:none;}
+}
+
+//区域标题
+.title(@height:37px, @background_img: url(../images/list3.jpg), @title_bg_img:url(../images/list.png) no-repeat){
+	background: @background_img repeat-x;
+	height: @height;
+
+    //名称
+    &_left{
+    	width: 70%;
+        line-height: @height; //垂直居中
+        font-size: 14px;
+        font-weight: bold;
+        color: #FFF;
+        float: left; 
+        padding-left: 20px;
+        background: @title_bg_img;
+    }
+
+    //更多
+    &_right{
+    	width:20%;
+    	line-height: @height;
+    	float:right;
+    	text-align: right;
+
+    	a{
+    		text-decoration: none;
+    		color: #999999;
+    		font-family: "宋体";
+    		font-size: 10px;
+    		font-weight: normal;
+    		padding-right: 10px;
+
+    		&:hover, &:active{
+    			text-decoration: underline;
+    		}
+    	}
+    }
+}
+
+.list(){
+	margin-top: 10px;
+	li{
+		background: url(../images/news_list.png) no-repeat left center;
+		margin-left: 10px;
+		padding-left: 10px;
+		//margin:8px;
+		height: 33px;
+		line-height: 33px;
+
+
+		a{
+			font-size: 15px;
+
+			&:link, &:visited{
+				text-decoration: none;
+				color: #000;
+			}
+
+			&:hover, &:active{
+				text-decoration: underline;
+				color: #F00;
+			}
+		}			
+
+		span{
+			color: #999;
+			float: right;
+		}
+		}
+	}
+
+//新闻列表
+.news(@width:300px, @title_height:37px){
+	width: @width;
+	border: 1px solid #E0E0E0;
+	margin: 10px 0 0 0;
+
+	//新闻列表
+	&_list{
+		.list();
+	}
+
+}
+
+.reset();
+
+.title{
+	.title();
+}
+
+body{
+	background: url(../images/body_bg.jpg) repeat-x;
+}
+
+.wrap{
+	width:1000px;
+	margin: 0 auto;
+}
+
+.top_content{
+	height: 36px;
+	line-height: 36px;
+	font-size: 12px;
+	font-family: "宋体";
+	background: url(../images/date_1.jpg) repeat-x;
+	padding: 0 20px;
+
+
+	span{
+		float:left;
+	}
+
+	li{
+		list-style-type: none;
+		float: right;
+		width:80px;
+	}
+
+	a{
+		&:link, &:visited{
+			color:#000;
+			text-decoration: none;
+		}
+
+		&:hover, &:active{
+			color:#D90;
+			text-decoration: none;
+		}
+	}
+}
+
+.logo{
+	height: 202px;
+	img{
+		width:1000px;
+		height: 202px;
+	}
+}
+
+.nav{
+	background-color: #cc1b1b;
+	height: 37px;
+	line-height: 37px;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	clear: both;
+	padding-left: 20px;
+
+	li{
+		float: left;
+		text-align: center;
+	}
+
+	a{
+		text-decoration: none;
+		font-size: 14px;
+		//font-family: "微软雅黑";
+		display: inline-block;
+		width: 100px;
+		//padding: 0 25px;
+		margin: 0 5px;
+
+		&:link, &:visited{
+			color:#FFF;
+
+		}
+
+		&:hover, &:active{
+			color:#FFF;
+			background: #004986;
+		}
+	}
+}
+
+.main{
+	clear: both;
+	min-height: 635px;
+	_heigh:635px;
+}
+.sidebar{
+	float: left;
+
+	.news{
+		.news();
+	}
+}
+
+.content{
+	float:right;
+	width: 690px;
+}
+
+.msg{
+	margin-top: 10px;
+	border: 1px solid #E0E0E0;
+	min-height: 310px;
+	_height: 310px;
+
+	&_content{
+		.pic_news{
+			margin-top: 10px;
+			float:left;
+			height:230px;
+			width:314px;
+			text-align: center;
+			vertical-align: center;
+		}
+
+		.msg_list{
+			float: right;
+			width: 370px;
+			.list();
+		}
+	}
+}
+
+
+.mid{
+	margin-top: 10px;
+	clear: both;
+	min-height: 313px;
+	_height: 313px;
+	&_left{
+		width:338px;
+		border: 1px solid #E0E0E0;
+		float:left;
+		.news_list{
+			.list();
+		}
+	}
+
+	&_right{
+		width:338px;
+		border: 1px solid #E0E0E0;
+		float:right;
+		.news_list{
+			.list();
+		}
+	}
+}
+
+.pic{
+	clear: both;
+	margin-top: 20px;
+	border: 1px solid #E0E0E0;
+	
+	&_list{
+		margin-top: 10px;
+		clear: both;
+		min-height: 170px;
+		_heigh:170px;
+		li{
+			float: left;
+			text-align: center;
+			width: 170px;
+			height: 145px;
+			overflow: hidden;
+			margin:10px;
+
+			img{
+				width: 158px;
+				height: 113px;
+			}
+
+			a{
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+.link{
+	clear: both;
+	min-height: 78px;
+	_heigh:78px;
+	margin-top: 10px;
+	border: 1px solid #E0E0E0;
+	padding-left: 100px;
+	background: url(../images/link1.png) no-repeat left center;
+	background-color: #F5F5F5;
+
+	li{
+		float: left;
+		text-align: center;
+		height: 78px;
+		line-height: 78px;
+		margin: 0px 10px;
+
+		a{
+			text-decoration: none;
+			color: #C81623;
+		}
+	}
+}
+
+.footer{
+	clear: both;
+	min-height:148px;
+	_height:148px;
+	text-align: center;
+	margin-top: 10px;
+
+	.company{
+		background-color: #0053B2;
+		color: #FFF;
+		height: 35px;
+		line-height: 35px;
+		font-size: 15px;
+	}
+
+	.info{
+		padding-top:20px;
+		background-color: #E8E8E8;
+		line-height: 30px;
+	}
+}
