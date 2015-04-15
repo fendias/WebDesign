@@ -6,7 +6,7 @@
 	img{border:none;}
 	input,select,textarea{outline:none; border:none; background:none;}
 	textarea{resize:none;}
-	//a{text-decoration:none;}
+	a{text-decoration:none;}
 }
 
 //区域标题
@@ -48,7 +48,7 @@
     }
 }
 
-.list(){
+.list(@_){
 	margin-top: 10px;
 	li{
 		background: url(../images/news_list.png) no-repeat left center;
@@ -77,8 +77,18 @@
 			color: #999;
 			float: right;
 		}
-		}
 	}
+}
+
+.list(no_dash){
+	
+}
+
+.list(dash){
+	li{
+		border-bottom: 1px dotted #CCC;
+	}
+}
 
 //新闻列表
 .news(@width:300px, @title_height:37px){
@@ -88,7 +98,7 @@
 
 	//新闻列表
 	&_list{
-		.list();
+		.list(no_dash);
 	}
 
 }
@@ -221,7 +231,7 @@ body{
 		.msg_list{
 			float: right;
 			width: 370px;
-			.list();
+			.list(no_dash);
 		}
 	}
 }
@@ -237,7 +247,7 @@ body{
 		border: 1px solid #E0E0E0;
 		float:left;
 		.news_list{
-			.list();
+			.list(no_dash);
 		}
 	}
 
@@ -246,7 +256,7 @@ body{
 		border: 1px solid #E0E0E0;
 		float:right;
 		.news_list{
-			.list();
+			.list(no_dash);
 		}
 	}
 }
@@ -324,5 +334,72 @@ body{
 		padding-top:20px;
 		background-color: #E8E8E8;
 		line-height: 30px;
+	}
+}
+
+//新闻列表页
+.list_box{
+	min-height: 350px;
+	_height: 350px;
+	border: 1px solid #E8E8E8;
+
+	h2{
+		height: 35px;
+		line-height: 35px;
+		font-weight: normal;
+		font-size: 12px;
+		font-family: "微软雅黑";
+		background: url(../images/type_bg.png) repeat-x;
+		padding-left: 20px;
+
+		span{
+			background:url(../images/list_pg1.gif) no-repeat left center;
+			padding-left: 20px;
+			font-weight: normal;
+			font-size: 12px;
+		}
+
+		a{
+			font-size: 12px;
+			&:link, &:visited{
+				color:#000;
+
+			}
+
+			&:hover, &:active{
+				color: #009CDF;
+			}
+		}
+	}
+
+	//新闻列表，使用带下划线的列表样式
+	.news_list{
+		.list(dash);
+		padding-right: 10px;
+	}
+
+	.page{
+		margin-top: 20px;
+		height: 40px;
+		line-height: 40px;
+		border-top: 1px solid #E0E0E0;
+		text-align: center;
+
+		span{
+			margin: 0 10px;
+		}
+
+		a{
+			margin: 0 10px;
+			&:link, &:visited{
+				color:#000;
+
+			}
+
+			&:hover, &:active{
+				color: #009CDF;
+				text-decoration: underline;
+			}
+		}
 	}
 }
