@@ -178,9 +178,8 @@ body {
 .msg_content .pic_news {
   margin-top: 10px;
   float: left;
-  height: 230px;
+  height: 250px;
   width: 314px;
-  text-align: center;
   vertical-align: center;
 }
 .msg_content .msg_list {
