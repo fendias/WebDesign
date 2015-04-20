@@ -5,10 +5,15 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "variables", "mixin";
-@import "compass/reset/utilities";
+@import "compass/css3";
+@import "compass/support";
+
+$supported-browsers:chrome;
+//最低版本
+$browser-minimum-versions: ("ie": "8");
 
 .test-reset-box-model {
-	@include reset-box-model;
+	@include box-shadow(1px 1px 3px 2px #cfcecf);
 }
 
 .headline{

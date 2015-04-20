@@ -2,61 +2,60 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 10, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 .test-reset-box-model {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  -webkit-box-shadow: 1px 1px 3px 2px #cfcecf;
+  box-shadow: 1px 1px 3px 2px #cfcecf;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 .headline {
   font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 .main-sec {
   font-family: Arial, Verdana, Helvetica, sans-serif;
 }
-/* line 21, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 .main-sec-headline {
   font-family: Arial, Verdana, Helvetica, sans-serif;
   font-size: 16px;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .main-sec-detail {
   font-size: 12px;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 p {
   color: #7f00ff;
 }
 
 @media (min-width: 768px) {
-  /* line 38, ../sass/screen.scss */
+  /* line 43, ../sass/screen.scss */
   .webdemo-sec {
     width: 50%;
     float: left;
   }
 }
-/* line 41, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .webdemo-sec:hover {
   background-color: #F5F5F5;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 .error.instrusion, .instrusion.serious-error {
   background-image: url("/image/hacked.png");
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .error, .serious-error {
   color: #f00;
 }
 
-/* line 54, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 .serious-error {
   border: 1px solid #f00;
 }
