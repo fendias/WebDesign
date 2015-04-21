@@ -158,7 +158,7 @@
 				<h2 class="title_left">青春榜样</h2>
 				<span class="title_right"><a href="list.html">更多&gt;&gt;</a></span>
 			</div>
-			<div class="pic_list">
+			<div id="marquee" class="pic_list">
 				<ul>
 					<li>
 						<a href="#">
@@ -166,29 +166,21 @@
 							<br>
 							<span>黄永冠</span>
 						</a>
-					</li>
-					<li>
 						<a href="#">
 							<img src="upload/pic.jpg" alt="">
 							<br>
 							<span>黄永冠</span>
 						</a>
-					</li>
-					<li>
 						<a href="#">
 							<img src="upload/pic.jpg" alt="">
 							<br>
 							<span>黄永冠</span>
 						</a>
-					</li>
-					<li>
 						<a href="#">
 							<img src="upload/pic.jpg" alt="">
 							<br>
 							<span>黄永冠</span>
 						</a>
-					</li>
-					<li>
 						<a href="#">
 							<img src="upload/pic.jpg" alt="">
 							<br>
@@ -217,6 +209,25 @@
 			</div>
 		</div>
 	</div><!-- wrap结束 -->
+	<<script>
+		var Marquee = function(id){
+		    var container = document.getElementById(id),
+		    slide = container.getElementsByTagName("li")[0],
+		    speed = 15;
+		    slide.innerHTML += slide.innerHTML;
+		    var item  = slide.getElementsByTagName("a"),
+		    critical = item[item.length/2].offsetLeft,
+		    delta = -critical;
+		    var rolling = function(){
+		      delta == 0 ? delta = -critical : delta++;
+		      slide.style.left = delta + "px";
+		    }
+		    var timer = setInterval(rolling,speed)
+		    container.onmouseover=function() {clearInterval(timer)}
+		    container.onmouseout=function() {timer=setInterval(rolling,speed)}
+		  }
 
+		 Marquee("marquee");
+	</script>
 </body>
 </html>

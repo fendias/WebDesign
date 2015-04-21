@@ -270,23 +270,35 @@ body{
 	&_list{
 		margin-top: 10px;
 		clear: both;
-		min-height: 170px;
-		_heigh:170px;
-		li{
-			float: left;
-			text-align: center;
-			width: 170px;
-			height: 145px;
+		min-height: 160px;
+		_heigh:160px;
+		ul{
+			position: relative;
 			overflow: hidden;
-			margin:10px;
+			//margin: 10px 2px;
+			height: 160px;
+		}
+		li{
+			position: absolute;
+			//float: left;
+			text-align: center;
+			//width: 170px;
+			width:1000%;
 
 			img{
-				width: 158px;
-				height: 113px;
+				width: 155px;
+				height: 110px;
+				display: block;
+				border: 1px solid #DCDADB;
+				padding: 5px;
+				background-color: #FFF;
 			}
 
 			a{
 				text-decoration: none;
+				position: relative;
+				float: left;
+				margin: 0 10px;
 			}
 		}
 	}

@@ -288,23 +288,32 @@ body {
 .pic_list {
   margin-top: 10px;
   clear: both;
-  min-height: 170px;
-  _heigh: 170px;
+  min-height: 160px;
+  _heigh: 160px;
+}
+.pic_list ul {
+  position: relative;
+  overflow: hidden;
+  height: 160px;
 }
 .pic_list li {
-  float: left;
+  position: absolute;
   text-align: center;
-  width: 170px;
-  height: 145px;
-  overflow: hidden;
-  margin: 10px;
+  width: 1000%;
 }
 .pic_list li img {
-  width: 158px;
-  height: 113px;
+  width: 155px;
+  height: 110px;
+  display: block;
+  border: 1px solid #DCDADB;
+  padding: 5px;
+  background-color: #FFF;
 }
 .pic_list li a {
   text-decoration: none;
+  position: relative;
+  float: left;
+  margin: 0 10px;
 }
 .link {
   clear: both;
