@@ -454,3 +454,55 @@ body{
 		}
 	}
 }
+
+.news_table{
+	margin: 2px auto;
+	width: 100%;
+	tbody{
+		width:100% !important;
+	}
+	tr{
+		border-bottom: 1px dotted #CCC;
+		&:last-child{
+			border-bottom: none;
+		}
+	}
+	th{
+		text-align: left;
+	}
+	td{
+		
+		height: 33px;
+		line-height: 33px;
+	}
+	&_header{
+		display: none;
+	}
+
+	a&_title{
+		background: url(../images/news_list.png) no-repeat left center;
+		margin-left: 10px;
+		padding-left: 10px;
+		height: 33px;
+		line-height: 33px;
+		font-size: 15px;
+
+		&:link, &:visited{
+			text-decoration: none;
+			color: #000;
+		}
+
+		&:hover, &:active{
+			text-decoration: underline;
+			color: #F00;
+		}		
+	}
+
+	&_date{
+		text-align: right;
+		margin-right: 10px;
+		color: #999;
+		float: right;
+
+	}
+}
