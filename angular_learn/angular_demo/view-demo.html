@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AngularJS</title>
+	<link rel="stylesheet" href="">
+</head>
+<body ng-app="helloAngularApp">
+	<div>
+		<hello></hello>
+	</div>
+
+	<script src="js/angular.min.js"></script>
+	<script>
+	var helloAngularApp = angular.module('helloAngularApp', []);
+	helloAngularApp.directive('hello', function () {
+		return {
+			restrict: 'E',
+			template:'<div>大家好!</div>',
+			replace: true
+		};
+	})
+	</script>
+</body>
+</html>
