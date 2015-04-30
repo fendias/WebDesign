@@ -14,11 +14,11 @@
 	<script src="js/angular.min.js"></script>
 	<script>
 	var helloAngularApp = angular.module('helloAngularApp', []);
-	helloAngularApp.controller('HelloCtrl', ['$scope', function ($scope) {
+	helloAngularApp.controller('HelloCtrl', function ($scope) {
 			$scope.greeting = {
 				text:"Hello"
 			};
-	}])
+	})
 	</script>
 </body>
 </html>
