@@ -1,0 +1,9 @@
+<ion-view view-title="快递列表">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="event in events" href="#/app/events/{{event.id}}">
+        {{event.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
