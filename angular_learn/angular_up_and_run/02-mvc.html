@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AngularJs Demo</title>
+	<script src="bower_components/angularjs/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="MyController">
+		<h1>{{author.name}}</h1>
+		<p>{{author.title + ',' + author.company}}</p>
+	</div>
+	<script>
+	function MyController($scope){
+		$scope.author = {
+			'name': '刘理想',
+			'title': '刘理想的angularjs',
+			'company': '550388300@qq.com'
+		}
+	}
+	</script>
+</body>
+</html>
