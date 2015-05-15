@@ -10,7 +10,7 @@ myApp.config(['$routeProvider',function ($routeProvider) {
 		controller: 'ListController'
 	})
 	.when('/details/:itemId', {
-		'templateUrl': 'partials/details',
+		'templateUrl': 'partials/details.html',
 		controller: 'DetailsController'
 	})
 	.otherwise({ redirectTo: '/list' });
