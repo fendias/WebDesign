@@ -1,5 +1,5 @@
-var myNameSpace = angular.module('myApp', []);
-myNameSpace.controller('MyController', 
+var artistControllers = angular.module('myApp', []);
+artistControllers.controller('ListController', 
 	['$scope','$http', function ($scope, $http) {
 		$http.get('js/data.json').success(function(data){
 			$scope.artists = data;
