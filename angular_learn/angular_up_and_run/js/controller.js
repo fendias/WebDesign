@@ -7,3 +7,12 @@ artistControllers.controller('ListController',
 			console.log(data);
 		});
 }]);
+
+artistControllers.controller('DetailsController', 
+	['$scope','$http', '$routeParams', function ($scope, $http, $routeParams) {
+		$http.get('js/data.json').success(function(data){
+			$scope.artists = data;
+			$scope.whichItem = $routeParams.itemId;
+			console.log($scope.whichItem);
+		});
+}]);
