@@ -16,7 +16,7 @@
 			<input type="radio" ng-model="direction" name="direction" value="reverse">逆序
 		</label>
 	</div>
-	<ul class="artistlist">
+	<ul class="artistlist" ng-show="query">
 		<li class="artist cf" ng-repeat="item in artists | filter:query | orderBy: artistOrder:direction">
 			<a href="#/details/{{artists.indexOf(item)}}">
 			<img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">

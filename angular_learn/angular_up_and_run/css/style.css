@@ -248,6 +248,11 @@ a.small {
   margin: 0;
   padding: 10px 10px 0 10px;
   border-bottom: 1px dotted black;
+  opacity: .9;
+  -webkit-transition: all 0.3s easy-out;
+  -moz-transition: all 0.3s easy-out;
+  -o-transition: all 0.3s easy-out;
+  transition: all 0.3s easy-out;
 }
 
 .artistlist a {
@@ -257,6 +262,10 @@ a.small {
 
 .artistlist li:hover {
   background: #FDF6E3;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .artist img {
@@ -308,4 +317,18 @@ a.small {
 
 .artistinfo .btn {
 
+}
+
+.artist.ng-enter.ng-enter-active,
+.artist.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.artist.ng-leave.ng-leave-active,
+.artist.ng-enter{
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
