@@ -1,0 +1,12 @@
+@import "compass/reset";
+
+body{
+    background: url(../img/space-bg.png) repeat-x fixed -80% 0;
+    background: 
+        url(../img/stars-1.png) repeat-x fixed -130% 0,
+        url(../img/stars-2.png) repeat-x fixed 40% 0,
+        url(../img/space-bg.png) repeat-x fixed -80% 0,
+        url(../img/clouds.png) repeat-x fixed 100% 0;
+    background-color: #1a1a1a;
+
+}

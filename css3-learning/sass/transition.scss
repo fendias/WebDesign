@@ -1,0 +1,16 @@
+@import "compass/reset";
+@import "compass";
+
+div.foo{
+    width: 50px;
+    padding: 5px 10px;
+    background: #9f3;
+    @include transition-property(background, width);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in);
+}
+
+div.foo:hover{
+    background: #690;
+    width: 100px;
+}

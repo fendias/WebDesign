@@ -1,0 +1,56 @@
+@import "compass/reset";
+@import "compass";
+
+body{
+    font-family: 微软雅黑, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #222;
+}
+
+#nav{
+    float: right;
+    padding: 42px 0 0 30px;
+
+    li{
+        float: left;
+        margin: 0 0 0 5px;
+        a{
+            padding: 5px 15px;
+            font-weight: bold;
+            color: #ccc;
+            color: rgba(255, 255, 255, 0.7);
+            @include single-text-shadow(0, 1px, 1px, rgba(255, 0, 0, 0.3));
+            @include border-radius(14px);
+            @include single-transition(all, 0.3s, ease-in-out);
+
+            &:hover,&:focus{
+                color: #fff;
+                background: rgba(255, 255, 255, 0.15);
+            }
+        }
+    }
+}
+
+#footer-logos{
+    text-align: center;
+
+    li{
+        display: inline;
+    }
+
+    a{
+        img{
+            opacity: 0.25;
+            -ms-fiter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=25)"; //IE8 hack
+            filter: alpha(opacity=25); //IE 5-7 hack
+            @include single-transition(opacity, 0.3s, ease-in-out);
+        }
+        
+        &:hover,&:focus{
+            img{
+                opacity: 0.6;
+                -ms-fiter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"; //IE8 hack
+                filter: alpha(opacity=60); //IE 5-7 hack
+            }
+        }
+    }
+}
