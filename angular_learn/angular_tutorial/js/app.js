@@ -1,7 +1,12 @@
 function UserService(){
-    this.sayHello = function (name) {
-        return "Hello there " + name;
+    var UserService = {};
+    function sayHello(name){
+        return "Hello there "+name;
     }
+    UserService.sayHello = function(name){
+        return sayHello(name);
+    };
+    return UserService;
 }
 
 function MainCtrl(UserService){
@@ -30,5 +35,5 @@ function MainCtrl(UserService){
 * App
 */
 angular.module('app', [])
-.service('User', UserService)
+.service('UserService', UserService)
 .controller('MainCtrl', MainCtrl)
