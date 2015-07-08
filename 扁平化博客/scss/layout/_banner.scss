@@ -1,0 +1,28 @@
+#banner{
+    background: $banner-bgColor;
+    height: $banner-height;
+
+    .inner {
+        max-width: $banner-inner-mxwidth;
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: $banner-inner-top;
+        h1{
+            margin: 0;
+        }
+
+        .sub-heading{
+            line-height: $banner-inner-subheading-lineHeight;
+            margin: $banner-inner-subheading-margin;
+        }
+
+        button{
+            padding: $banner-button-padding;
+        }
+
+        .more {
+            margin-top: $banner-inner-more-mgTop;
+        }
+    }
+}
