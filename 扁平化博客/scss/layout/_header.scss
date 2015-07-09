@@ -7,22 +7,19 @@ nav{
     ul{
         list-style: none;
         margin:0;
+        float: $navbar-menu-float;
         
         li{
             display: inline;
             line-height: $navbar-height;
-            float: $navbar-menu-float;
             margin-right: $navbar-menu-mright;
-
-            &.logo{
-                float: left;
-            }
 
             a{
                 line-height: $navbar-height;
                 display: inline-block;
                 height: inherit;
                 text-decoration: none;
+                color: $navbar-menu-color;
             }
         }
     }

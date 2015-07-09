@@ -1,4 +1,5 @@
 /*banner*/
+/*components*/
 /* normalize-scss 3.0.2+normalize.3.0.2 | MIT/GPLv2 License | bit.ly/normalize-scss */
 /**
  * Establish a vertical rhythm unit using $base-font-size, $base-line-height,
@@ -551,26 +552,25 @@ nav {
 nav ul {
   list-style: none;
   margin: 0;
+  float: right;
 }
 nav ul li {
   display: inline;
   line-height: 50px;
-  float: right;
   margin-right: 20px;
-}
-nav ul li.logo {
-  float: left;
 }
 nav ul li a {
   line-height: 50px;
   display: inline-block;
   height: inherit;
   text-decoration: none;
+  color: #fff;
 }
 
 #banner {
   background: #777;
   height: 700px;
+  color: #fff;
 }
 #banner .inner {
   max-width: 300px;
@@ -581,6 +581,8 @@ nav ul li a {
 }
 #banner .inner h1 {
   margin: 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
 }
 #banner .inner .sub-heading {
   line-height: 30px;
@@ -595,9 +597,26 @@ nav ul li a {
 
 button {
   border: none;
-  background-color: #333;
+  background-color: #337ab7;
   color: #eee;
   padding: 20px;
+}
+button:hover, button:focus {
+  background-color: #2e6da4;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+  line-height: 50px;
+  float: left;
+  padding: 0 0 0 10px;
+}
+.logo a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=application.css.map */

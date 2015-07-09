@@ -1,6 +1,7 @@
 #banner{
     background: $banner-bgColor;
     height: $banner-height;
+    color: $banner-color;
 
     .inner {
         max-width: $banner-inner-mxwidth;
@@ -10,6 +11,8 @@
         top: $banner-inner-top;
         h1{
             margin: 0;
+            border-top: $banner-inner-h1-border;
+            border-bottom: $banner-inner-h1-border;
         }
 
         .sub-heading{
