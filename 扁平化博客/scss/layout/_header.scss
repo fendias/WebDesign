@@ -10,9 +10,13 @@ nav{
         float: $navbar-menu-float;
         
         li{
-            display: inline;
+            display: inline-block;
             line-height: $navbar-height;
             margin-right: $navbar-menu-mright;
+
+            &.active{
+                border-bottom: 2px solid #fff;
+            }
 
             a{
                 line-height: $navbar-height;

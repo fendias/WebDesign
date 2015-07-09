@@ -11,6 +11,7 @@
         top: $banner-inner-top;
         h1{
             margin: 0;
+            padding: $banner-inner-h1-padding;
             border-top: $banner-inner-h1-border;
             border-bottom: $banner-inner-h1-border;
         }
