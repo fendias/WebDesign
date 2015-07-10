@@ -34,50 +34,84 @@
         font-size: 0;
         background: #1E252A;
         color: #fff;
+        overflow: auto;
         
         &:nth-child(odd){
             background-color: #282521;
+            .img-section{
+                float:left;
+            }
+            .text-section{
+                float:right;
+            }
         }
 
-        &>div {
-            float: left;
-        }
+        // &>div {
+        //     float: left;
+        // }
 
         &:after{
             content: '';
             display: block;
             clear: both;
         }
-    }
 
-    .img-section{
-        width: 45%;
-        line-height: 0;
+        .img-section{
+            width: 45%;
+            line-height: 0;
+            float: right;
 
-        img{
-            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+
+        .text-section{
+            width: 50%;
+            float: left;
+            &>*{
+                max-width: 80%;
+            }
+            //position: relative;
+            //top: 68px;
+            //left: 50px;
+            padding: 20px 0 0 20px;
+
+            .sub-heading{
+                font-size: 20px;
+                margin-top: 0;
+            }
         }
     }
+}
 
-    .text-section{
-        width: 55%;
-        &>*{
-            max-width: 80%;
-        }
-        position: relative;
-        top: 68px;
-        left: 50px;
-        //margin: 20px 0 0 20px;
+.purple-section{
+    background: #97B8FC;
+    color: #fff;
+    padding: 80px;
 
-        .sub-heading{
-            font-size: 20px;
-            margin-top: 0;
-        }
+    .heading-wrapper{
+        text-align: center;
+    }
 
-        p{
-            font-size: 18px;
-            letter-spacing: 1px;
-        } 
+    .hr{
+        background: #fff;
+        width: 60%;
+    }
+
+    .card{
+        float: left;
+        width: 50%;
+        min-height: 300px;
+        padding: 50px;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) { 
+            background-color: rgba(0, 0, 0, 0.04+0.04*$i);
+          }
+       }
     }
 }
 

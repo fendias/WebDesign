@@ -6,9 +6,30 @@ h2 {
     font-size: $h2-font-size;
 }
 
+h3 {
+    font-size: $h3-font-size;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+ul{
+    margin:0;
+}
+
 .hr{
     width: $hr-width;
     height: $hr-height;
     margin: $hr-margin;
     background: $hr-bg;
+}
+
+.clearfix{
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
 }
