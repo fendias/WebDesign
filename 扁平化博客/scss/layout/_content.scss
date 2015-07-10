@@ -1,3 +1,4 @@
+@using 'utf-8';
 .green-section{
     text-align: $green-section-text-align;
     color: $green-section-color;
@@ -61,7 +62,7 @@
     .text-section{
         width: 55%;
         &>*{
-            max-width: 90%;
+            max-width: 80%;
         }
         position: relative;
         top: 68px;
