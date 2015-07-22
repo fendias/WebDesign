@@ -62,3 +62,25 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 3, ../sass/main.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 7, ../sass/main.scss */
+.panel-head, .panel-foot {
+  box-sizing: border-box;
+  height: 50px;
+  line-height: 50px;
+  width: 100% !important;
+  background: #76BCF8;
+  padding: 0 20px;
+  border: none;
+  margin: 0;
+}
+/* line 18, ../sass/main.scss */
+.panel-head h1, .panel-foot h1 {
+  text-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
