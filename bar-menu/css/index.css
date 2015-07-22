@@ -1,3 +1,7 @@
+.toolbar-item, .toolbar-layer {
+  background-image: url(../img/toolbar.png);
+  background-repeat: no-repeat; }
+
 .toolbar {
   position: fixed;
   right: 5px;
@@ -9,8 +13,6 @@
   display: block;
   width: 52px;
   height: 52px;
-  background-image: url(../img/toolbar.png);
-  background-repeat: no-repeat;
   margin-top: 1px;
   transition: background-position 1s; }
   .toolbar-item:hover .toolbar-layer {
@@ -29,7 +31,7 @@
 .toolbar-item-feedback {
   background-position: 0 -426px; }
   .toolbar-item-feedback:hover {
-    background-position: 0 -488px; }
+    background-position: 0 -480px; }
 
 .toolbar-item-app {
   background-position: 0 -550px; }
@@ -40,17 +42,15 @@
     background-position: 0 -222px; }
 
 .toolbar-item-top {
-  background-position: 0 -798px; }
+  background-position: 0 -674px; }
   .toolbar-item-top:hover {
-    background-position: 0 -860px; }
+    background-position: 0 -736px; }
 
 .toolbar-layer {
   position: absolute;
   right: 46px;
   bottom: -10px;
   width: 172px;
-  background-image: url(../img/toolbar.png);
-  background-repeat: no-repeat;
   opacity: 0;
   filter: alpha(opacity=0);
   transform-origin: 95% 95%;
