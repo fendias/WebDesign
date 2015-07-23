@@ -9,6 +9,8 @@
 
 @import "compass/layout";
 
+@import "ionicons";
+
 //默认颜色
 $default-color: #fff;
 
@@ -26,12 +28,21 @@ body{
     font-family: "arial","microsoft yahei","helvetica","sans-serif";
 }
 
+a{
+    text-decoration: none;
+
+    &:hover, &:active{
+        text-decoration: none;
+    }
+}
+
 .side-bar{
     width: 300px;
     background: {
         color: $siderbar-bg-color;
     }
-    @include stretch-y($navbar-height);
+    @include stretch-y($navbar-height, $footer-height);
+    overflow: scroll;
 }
 
 .menu{
@@ -42,6 +53,10 @@ body{
         position: relative;
         height: 45px;
         line-height: 45px;
+
+        a {
+            color: #000;
+        }
     }
 
     .menu-title{
