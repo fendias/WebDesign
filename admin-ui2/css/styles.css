@@ -12489,7 +12489,7 @@ a:hover, a:active {
   position: absolute;
   top: 50px;
   bottom: 54px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 /* line 48, ../sass/styles.scss */
