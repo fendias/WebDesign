@@ -1,0 +1,9 @@
+@include sticky-footer(54px, "#root", "#root-footer", "#footer");
+
+footer{
+    background: {
+        color: $default-bg-color;
+    }
+    line-height: $footer-height;
+    color: #fff;
+}

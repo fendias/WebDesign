@@ -12467,46 +12467,24 @@ button.close {
   content: "\f30c";
 }
 
-/* line 1, ../sass/_base.scss */
-html, body {
-  height: 100%;
-}
-
-/* line 4, ../sass/_base.scss */
-html {
-  position: relative;
-}
-
-/* line 7, ../sass/_base.scss */
+/* line 25, ../sass/styles.scss */
 body {
   padding-top: 50px;
   font-family: "arial","microsoft yahei","helvetica","sans-serif";
-  margin-bottom: -54px;
 }
 
-/* line 14, ../sass/_base.scss */
+/* line 31, ../sass/styles.scss */
 a {
   text-decoration: none;
 }
-/* line 17, ../sass/_base.scss */
+/* line 34, ../sass/styles.scss */
 a:hover, a:active {
   text-decoration: none;
 }
 
-/* line 22, ../sass/_base.scss */
-.main {
-  height: 100%;
-}
-
-/* line 1, ../sass/_content.scss */
-.content {
-  margin-left: 300px;
-}
-
-/* line 1, ../sass/_sidebar.scss */
+/* line 39, ../sass/styles.scss */
 .side-bar {
   width: 300px;
-  color: #787878;
   background-color: #F5F5F5;
   position: absolute;
   top: 50px;
@@ -12514,73 +12492,65 @@ a:hover, a:active {
   overflow-y: auto;
 }
 
-/* line 11, ../sass/_sidebar.scss */
+/* line 48, ../sass/styles.scss */
 .menu {
   background-color: #F5F5F5;
-  border-bottom: 1px solid #ccc;
 }
-/* line 15, ../sass/_sidebar.scss */
+/* line 52, ../sass/styles.scss */
 .menu .menu-header {
   position: relative;
   height: 45px;
   line-height: 45px;
   cursor: pointer;
 }
-/* line 21, ../sass/_sidebar.scss */
-.menu .menu-header.active {
-  background-color: #00ACED;
-  color: #fff;
-}
-/* line 24, ../sass/_sidebar.scss */
-.menu .menu-header.active .menu-title {
-  font-weight: bold;
-}
-/* line 27, ../sass/_sidebar.scss */
+/* line 59, ../sass/styles.scss */
 .menu .menu-header.active .menu-icon {
+  background-color: #17BCBD;
   color: #fff;
 }
-/* line 33, ../sass/_sidebar.scss */
+/* line 68, ../sass/styles.scss */
 .menu .menu-title {
+  font-weight: bold;
   font-size: 14px;
+  border-bottom: 1px solid #e9e9e9;
 }
-/* line 38, ../sass/_sidebar.scss */
+/* line 74, ../sass/styles.scss */
 .menu .menu-title-with-icon {
   height: 45px;
   line-height: 45px;
   margin-left: 77px;
   padding-left: 20px;
 }
-/* line 44, ../sass/_sidebar.scss */
+/* line 80, ../sass/styles.scss */
 .menu .menu-icon {
   display: block;
   font-size: 40px;
   line-height: 45px;
   position: absolute;
-  color: #787878;
   border-right: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
   height: 45px;
   left: 0;
   top: 0;
   width: 77px;
   text-align: center;
 }
-/* line 60, ../sass/_sidebar.scss */
+/* line 96, ../sass/styles.scss */
 .menu .menu-items {
   margin: 0 0 0 77px;
-  display: none;
   padding: 0;
   list-style-type: none;
   border-left: 1px solid #e9e9e9;
-  border-right: 2px solid #61AADF;
+  border-right: 2px solid #23527C;
   background-color: #fff;
 }
-/* line 72, ../sass/_sidebar.scss */
+/* line 107, ../sass/styles.scss */
 .menu .menu-items li {
   list-style-type: none;
-  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
   font-size: 14px;
 }
-/* line 78, ../sass/_sidebar.scss */
+/* line 113, ../sass/styles.scss */
 .menu .menu-items a {
   display: block;
   text-decoration: none;
@@ -12612,7 +12582,7 @@ html, body {
   height: 54px;
 }
 
-/* line 3, ../sass/_footer.scss */
+/* line 123, ../sass/styles.scss */
 footer {
   background-color: #35324F;
   line-height: 54px;

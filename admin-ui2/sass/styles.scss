@@ -11,110 +11,13 @@
 
 @import "ionicons";
 
-//默认颜色
-$default-color: #fff;
+@import "variables";
+@import "base";
+@import "content";
+@import "sidebar";
+@import "footer";
 
-$default-bg-color: $navbar-default-bg;
 
-//sidebar背景色
-$siderbar-bg-color: #F5F5F5;
 
-//footer高度
-$footer-height: 54px;
 
-body{
-    //color: $default-color;
-    padding-top: $navbar-height;
-    font-family: "arial","microsoft yahei","helvetica","sans-serif";
-}
 
-a{
-    text-decoration: none;
-
-    &:hover, &:active{
-        text-decoration: none;
-    }
-}
-
-.side-bar{
-    width: 300px;
-    background: {
-        color: $siderbar-bg-color;
-    }
-    @include stretch-y($navbar-height, $footer-height);
-    overflow-y: scroll;
-}
-
-.menu{
-    background-color: $siderbar-bg-color;
-    border-bottom: 1px solid #ccc;
-
-    .menu-header{
-        position: relative;
-        height: 45px;
-        line-height: 45px;
-
-        a {
-            color: #000;
-        }
-    }
-
-    .menu-title{
-        font-weight: bold;
-        font-size: 14px;
-    }
-
-    .menu-title-with-icon{
-        height: 45px;
-        line-height: 45px;
-        margin-left: 77px;
-        padding-left: 20px;
-    }
-    .menu-icon {
-        display: block;
-        font-size: 40px;
-        line-height: 45px;
-        position: absolute;
-        height:45px;
-        left:0;
-        top: 0;
-        width: 77px;
-        text-align: center;
-        &.active{
-            background:{
-                color: #17BCBD;
-            }
-            color: #fff;
-        }
-    }
-
-    .menu-items{
-        margin: 0 0 0 77px;
-        padding: 0;
-        list-style-type: none;
-        border-left: 1px solid #e9e9e9;
-        background-color: #fff;
-
-        li{
-            list-style-type: none;
-            border-bottom: 1px solid #e9e9e9;
-            font-size: 14px;
-        }
-
-        a{
-            display: block;
-            text-decoration: none;
-            padding: 6px;
-        }
-    }
-}
-
-@include sticky-footer(54px, "#root", "#root-footer", "#footer");
-
-footer{
-    background: {
-        color: $default-bg-color;
-    }
-    line-height: $footer-height;
-    color: #fff;
-}
