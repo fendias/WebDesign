@@ -11,6 +11,7 @@ gulp.task("concatScripts", function(){
   return gulp.src([
     'js/jquery-1.11.3.min.js',
     'js/jquery.sequenceEqual.js',
+    //'js/ejs_production.js',
     'js/bootstrap.js',
     'js/scrollbar.js',
     'js/tabs.js',

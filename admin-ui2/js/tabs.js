@@ -19,23 +19,22 @@ $(function () {
 
 //this method will demonstrate how to add tab dynamically
 function registerComposeButtonEvent() {
-    /* just for this demo */
-    $('#composeButton').click(function (e) {
+    $(".menu-items a").click(function(e){
         e.preventDefault();
-
-        var tabId = "compose" + composeCount; //this is id on tab content div where the 
-        composeCount = composeCount + 1; //increment compose count
-
-        $('.nav-tabs').append('<li><a href="#' + tabId + '"><button class="close closeTab" type="button" >×</button>Compose</a></li>');
-        $('.tab-content').append('<div class="tab-pane" id="' + tabId + '"></div>');
-
-        craeteNewTabAndLoadUrl("", "./SamplePage.html", "#" + tabId);
-
-        $(this).tab('show');
-        showTab(tabId);
+        var menuInfo = {
+            id: $(this).data("id"),
+            title: $(this).data("title"),
+            icon: $(this).data("icon")
+        };
+        if($('.tab-content #'+menuInfo.id).length == 0){
+            composeCount = composeCount + 1;
+            $('.nav-tabs').append('<li><a href="#'+menuInfo.id+'"><button class="close closeTab" type="button" >×</button><span class="icon '+menuInfo.icon+'"></span>&nbsp;'+menuInfo.title+'</a></li>');
+            $('.tab-content').append('<div class="tab-pane" id="' + menuInfo.id + '">'+menuInfo.title+'</div>');
+            //createNewTabAndLoadUrl("", "./test.html", "#" + menu_id);
+        }
+        showTab(menuInfo.id);
         registerCloseEvent();
     });
-
 }
 
 //this method will register event on close icon on the tab..
@@ -62,7 +61,7 @@ function getCurrentTab() {
 }
 
 //This function will create a new tab here and it will load the url content in tab content div.
-function craeteNewTabAndLoadUrl(parms, url, loadDivSelector) {
+function createNewTabAndLoadUrl(parms, url, loadDivSelector) {
 
     $("" + loadDivSelector).load(url, function (response, status, xhr) {
         if (status == "error") {

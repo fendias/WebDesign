@@ -12588,22 +12588,27 @@ a:hover, a:active {
 }
 
 /* line 1, ../sass/_tabs.scss */
+.nav-tabs {
+  background-color: #D8D8D8;
+}
+
+/* line 5, ../sass/_tabs.scss */
 .nav-tabs > li .close {
-  margin: -2px 0 0 10px;
+  margin-left: 10px;
   font-size: 18px;
 }
 
-/* line 6, ../sass/_tabs.scss */
+/* line 11, ../sass/_tabs.scss */
 .marginBottom {
   margin-bottom: 1px !important;
 }
 
-/* line 10, ../sass/_tabs.scss */
+/* line 15, ../sass/_tabs.scss */
 .operationDiv {
   padding: 5px 10px 5px 5px;
 }
 
-/* line 14, ../sass/_tabs.scss */
+/* line 19, ../sass/_tabs.scss */
 .operationDivWrapper {
   margin-top: -1px;
 }
