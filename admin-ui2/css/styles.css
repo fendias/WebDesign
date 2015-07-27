@@ -12587,6 +12587,27 @@ a:hover, a:active {
   padding: 6px;
 }
 
+/* line 1, ../sass/_tabs.scss */
+.nav-tabs > li .close {
+  margin: -2px 0 0 10px;
+  font-size: 18px;
+}
+
+/* line 6, ../sass/_tabs.scss */
+.marginBottom {
+  margin-bottom: 1px !important;
+}
+
+/* line 10, ../sass/_tabs.scss */
+.operationDiv {
+  padding: 5px 10px 5px 5px;
+}
+
+/* line 14, ../sass/_tabs.scss */
+.operationDivWrapper {
+  margin-top: -1px;
+}
+
 /* line 10, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;

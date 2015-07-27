@@ -43,7 +43,7 @@
                                 <span class="menu-icon icon ion-ios-albums"></span>
                             </div>
                             <ul class="menu-items">
-                                <li><a href="#">待办事宜</a></li>
+                                <li><a href="#" data-id="todo" data-icon="ion-bookmark">待办事宜</a></li>
                             </ul>
                         </div>
                         <div class="menu">
@@ -114,8 +114,38 @@
             </div>
             <!-- side-bar结束 -->
             <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error cupiditate sunt mollitia non? Soluta aut ea eveniet quaerat quidem inventore, temporibus blanditiis delectus ut fuga quibusdam voluptate, cum iste consectetur.
-            </div>
+                <div class="container">
+                    <ul class="nav nav-tabs marginBottom" id="myTab">
+                        <li class="active "><a href="#home" class="backgroundRed"><span class="icon ion-ios-home"></span>首页</a>
+
+                        </li>
+                        <li><a href="#profile"><button class="close closeTab" type="button" >×</button>Sent</a>
+
+                        </li>
+                        <li><a href="#messages"><button class="close closeTab" type="button" >×</button>Compose</a>
+
+                        </li>
+                        <li><a href="#settings"><button class="close closeTab" type="button" >×</button> Re:this is test subject</a>
+
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="operationDiv">
+                            <button type="submit" class="btn" id="composeButton">Compose</button>
+                        </div>
+                    </div>
+                    <div class="row-fluid ">
+                        <div class="row-fluid ">
+                            <div class="tab-content span4">
+                                <div class="tab-pane active" id="home">Inbox</div>
+                                <div class="tab-pane" id="profile">sent</div>
+                                <div class="tab-pane" id="messages">Compose1</div>
+                                <div class="tab-pane" id="settings">Re:This is test</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- content结束 -->
         </div><!-- main结束 -->
         <div id="root-footer"></div>
     </div>

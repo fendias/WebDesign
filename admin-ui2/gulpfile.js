@@ -13,6 +13,7 @@ gulp.task("concatScripts", function(){
     'js/jquery.sequenceEqual.js',
     'js/bootstrap.js',
     'js/scrollbar.js',
+    'js/tabs.js',
     'js/main.js'])
   .pipe(maps.init())
   .pipe(concat("app.js"))
@@ -28,7 +29,7 @@ gulp.task("minifyScripts", ["concatScripts"], function(){
 });
 
 gulp.task("watchFiles", function(){
-  gulp.watch(['js/main.js', 'js/scrollbar.js'], ['concatScripts']);
+  gulp.watch(['js/main.js', 'js/scrollbar.js', 'js/tabs.js'], ['concatScripts']);
 });
 
 gulp.task("clean", function(){
