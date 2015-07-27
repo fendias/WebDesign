@@ -2435,12 +2435,13 @@ function registerComposeButtonEvent() {
         var menuInfo = {
             id: $(this).data("id"),
             title: $(this).data("title"),
-            icon: $(this).data("icon")
+            icon: $(this).data("icon"),
+            href: $(this).attr("href")
         };
         if($('.tab-content #'+menuInfo.id).length == 0){
             composeCount = composeCount + 1;
             $('.nav-tabs').append('<li><a href="#'+menuInfo.id+'"><button class="close closeTab" type="button" >×</button><span class="icon '+menuInfo.icon+'"></span>&nbsp;'+menuInfo.title+'</a></li>');
-            $('.tab-content').append('<div class="tab-pane" id="' + menuInfo.id + '">'+menuInfo.title+'</div>');
+            $('.tab-content').append('<div class="tab-pane" id="' + menuInfo.id + '"><iframe src="'+menuInfo.href+'" width="100%" height="100%"></iframe></div>');
             //createNewTabAndLoadUrl("", "./test.html", "#" + menu_id);
         }
         showTab(menuInfo.id);
