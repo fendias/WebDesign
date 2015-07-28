@@ -11,6 +11,7 @@ gulp.task("concatScripts", function(){
   return gulp.src([
     'js/jquery-1.11.3.min.js',
     'js/jquery.sequenceEqual.js',
+    'js/jquery.easyui.min.js',
     //'js/ejs_production.js',
     'js/bootstrap.js',
     'js/scrollbar.js',
@@ -38,7 +39,7 @@ gulp.task("clean", function(){
 });
 
 gulp.task("build", ["minifyScripts"], function(){
-  return gulp.src(["css/styles.css", "js/app.min.js",
+  return gulp.src(["css/**", "js/app.min.js",
                   "index.html", "img/**", "fonts/**"], {base: './'})
         .pipe(gulp.dest('dist'));
 });
