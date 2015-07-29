@@ -30,9 +30,9 @@
   content: "\e602"; }
 
 .toolbar {
-  position: absolute;
+  position: fixed;
   left: 50%;
-  bottom: -5px;
+  bottom: 5px;
   margin-left: -26px; }
 
 .toolbar-item {
