@@ -8,4 +8,4 @@ for (var i = 0, length = this.length; i < length; i++) {
     }
 }
 return true;
-}
+};

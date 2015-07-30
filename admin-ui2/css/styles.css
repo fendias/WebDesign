@@ -12504,14 +12504,14 @@ a:hover, a:active {
   top: 50px;
   bottom: 54px;
   position: absolute;
-  left: 300px;
+  left: 200px;
   right: 0;
   overflow-y: auto;
 }
 
 /* line 1, ../sass/_sidebar.scss */
 .side-bar {
-  width: 300px;
+  width: 200px;
   color: #787878;
   background-color: #F5F5F5;
   position: absolute;

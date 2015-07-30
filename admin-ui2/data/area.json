@@ -1,0 +1,44 @@
+{
+    "title": "码头堆场区域展示",
+    "areas": [{
+        "id": 1,
+        "x": 1,
+        "y": 1,
+        "width": 1,
+        "height": 1,
+        "color": "#ccc",
+        "desc": "#1堆场"
+    }, {
+        "id": 2,
+        "x": 1,
+        "y": 2,
+        "width": 1,
+        "height": 1,
+        "color": "red",
+        "desc": "#2堆场"
+    }, {
+        "id": 3,
+        "x": 2,
+        "y": 1,
+        "width": 1,
+        "height": 1,
+        "color": "blue",
+        "desc": "#3堆场"
+    }, {
+        "id": 4,
+        "x": 3,
+        "y": 2,
+        "width": 2,
+        "height": 1,
+        "color": "#5BA6E7",
+        "desc": "#4堆场"
+    }, {
+        "id": 5,
+        "x": 10,
+        "y": 1,
+        "width": 2,
+        "height": 5,
+        "color": "#5BA6E7",
+        "desc": "#5堆场"
+    }]
+}
