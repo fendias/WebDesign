@@ -1,4 +1,4 @@
-@include sticky-footer(54px, "#root", "#root-footer", "#footer");
+@include sticky-footer($footer-height, "#root", "#root-footer", "#footer");
 
 footer{
     background: {
