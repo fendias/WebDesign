@@ -30,7 +30,7 @@ function registerComposeButtonEvent() {
         if($('.tab-content #'+menuInfo.id).length == 0){
             composeCount = composeCount + 1;
             $('.nav-tabs').append('<li><a href="#'+menuInfo.id+'"><span class="icon '+menuInfo.icon+'"></span>&nbsp;'+menuInfo.title+'&nbsp;<span class="closeTab">×</span></a></li>');
-            $('.tab-content').append('<div class="tab-pane" id="' + menuInfo.id + '"><iframe src="'+menuInfo.href+'" width="100%" height="100%"></iframe></div>');
+            $('.tab-content').append('<div class="tab-pane" id="' + menuInfo.id + '"><iframe src="'+menuInfo.href+'"></iframe></div>');
             //createNewTabAndLoadUrl("", "./test.html", "#" + menu_id);
         }
         showTab(menuInfo.id);

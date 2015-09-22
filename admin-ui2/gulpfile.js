@@ -40,7 +40,7 @@ gulp.task("clean", function(){
 });
 
 gulp.task("build", ["minifyScripts"], function(){
-  return gulp.src(["css/**", "js/app.min.js", "js/html5shiv.min.js", "js/respond.min.js",
+  return gulp.src(["css/**", "js/app.min.js", "js/html5shiv.min.js", "js/respond.min.js", "js/modernizr-2.8.3.js",
                   "index.html", "img/**", "fonts/**"], {base: './'})
         .pipe(gulp.dest('dist'));
 });

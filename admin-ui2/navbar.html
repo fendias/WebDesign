@@ -7,36 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>后台管理</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-     <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
-    <![endif]-->  
-    <script src="js/modernizr-2.8.3.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css" media="screen">
+        .head{
+            box-sizing: border-box;
+            background-image: linear-gradient(#54b4eb,#2fa4e7 60%,#1d9ce5);
+            background-color: #54b4eb;
+            border-bottom: 1px solid #178ACC;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+            min-height: 50px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            margin: 0 auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            line-heigt: 50px;
+        }
+
+        .head-default{
+            background-color: #178ACC;
+            border-color: #1476AE;
+        }
+
+        .head-fixed-top{
+            position: fixed;
+            right: 0px;
+            left: 0px;
+            top: 0;
+            z-index: 1030;
+            border-width: 0px 0px 1px;
+        }
+
+        .head-title{
+            float: left;
+            font-size: 18px;
+            line-height: 50px;
+            padding: 0 15px;
+            color: #FFF;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .head-nav{
+            float: left;
+            display: inline-block;
+            font-size: 14px;
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .head-nav > li{
+            float: left;
+        }
+
+        .head-nav > li.active a{
+            background-color: #1476AE;
+            color: #FFF;
+        }
+
+        .head-nav > li a{
+            line-height: 50px;
+            font-size: 14px;
+            padding: 0 15px;
+            display: inline-block;
+            color: #FFF;
+        }
+
+        .head-nav > li a:hover{
+            line-height: 50px;
+            font-size: 14px;
+            padding: 0 15px;
+            display: inline-block;
+            color: #eee;
+        }
+
+    </style>
 </head>
 
 <body>
     <div id="root" class="page-wrap">
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">铜冠信息科技有限责任公司</a>
-                </div>
-                <!-- navbar-header结束 -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">首页</a></li>
-                        <li><a href="#">测试</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">用户</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="head head-fixed-top">
+            <a class="head-title" href="#">铜冠信息科技有限责任公司</a>
+            <ul class="head-nav">
+                <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">测试<span class="sr-only">(current)</span></a></li>
+            </ul>
+            <ul class="head-nav navbar-right">
+                <li><a href="#">用户</a></li>
+            </ul>
         </div>
         <!-- header结束 -->
         <div class="main">
@@ -136,7 +198,6 @@
     </footer>
     <!-- footer结束 -->
     <script src="js/app.js" type="text/javascript"></script>
-    <script src="js/respond.min.js"></script>
 </body>
 
 </html>
