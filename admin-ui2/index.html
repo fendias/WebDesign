@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>后台管理</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-     <!--[if lt IE 9]>
+    <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
-    <![endif]-->  
+    <![endif]-->
     <script src="js/modernizr-2.8.3.js"></script>
 </head>
 
@@ -31,6 +31,18 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">首页</a></li>
                         <li><a href="#">测试</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多 <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">测试1</a></li>
+                                <li><a href="#">测试2</a></li>
+                                <li><a href="#">测试3</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">测试4</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">测试5</a></li>
+                            </ul>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">用户</a></li>
@@ -127,8 +139,10 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="home">首页</div>
                 </div>
-            </div><!-- content结束 -->
-        </div><!-- main结束 -->
+            </div>
+            <!-- content结束 -->
+        </div>
+        <!-- main结束 -->
         <div id="root-footer"></div>
     </div>
     <footer id="footer">
