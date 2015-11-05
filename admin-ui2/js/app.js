@@ -16614,6 +16614,11 @@ var scrollbar = {
                 $(this).addClass("active");
             }
         })
+    },
+    watchSidebarBtnEvent: function(){
+        $("#btn_hide_sidebar").click(function(){
+            console.log("点击隐藏按钮");
+        });
     }
 }
 
@@ -16712,5 +16717,6 @@ function removeCurrentTab() {
 $(function(){
     scrollbar.closeAllMenus();
     scrollbar.watchClickEvent();
+    scrollbar.watchSidebarBtnEvent();
 });
 //# sourceMappingURL=app.js.map

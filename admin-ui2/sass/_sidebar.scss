@@ -31,15 +31,15 @@
     }
 
     .menu-title{
-        font-size: 14px;
+        font-size: $sidebar-menu-title-font-size;
         
     }
 
     .menu-title-with-icon{
         height: 45px;
         line-height: 45px;
-        margin-left: 77px;
-        padding-left: 20px;
+        margin-left: $sidebar-icon-width;
+        padding-left: 10px;
     }
     .menu-icon {
         display: block;
@@ -53,12 +53,12 @@
         height:45px;
         left:0;
         top: 0;
-        width: 77px;
+        width: $sidebar-icon-width;
         text-align: center;
     }
 
     .menu-items{
-        margin: 0 0 0 77px;
+        margin: 0 0 0 $sidebar-icon-width;
         display: none;
         padding: 0;
         list-style-type: none;

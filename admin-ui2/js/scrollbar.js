@@ -25,5 +25,10 @@ var scrollbar = {
                 $(this).addClass("active");
             }
         })
+    },
+    watchSidebarBtnEvent: function(){
+        $("#btn_hide_sidebar").click(function(){
+            console.log("点击隐藏按钮");
+        });
     }
 }
