@@ -1,0 +1,63 @@
+@import "compass/css3";
+
+@-webkit-keyframes flip { 
+    0% {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+@keyframes flip { 
+    0% {
+        transform: rotateY(-180deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+li
+  {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        background: #ccc;
+        margin: 10px;
+         opacity: 0.5;
+        
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    
+        -webkit-animation-name: flip;
+        animation-name: flip;
+  
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -webkit-animation-timing-function: ease;
+        animation-timing-function: ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        
+        // Loop through the items and add some delay.
+      @for $i from 1 through 20 {
+          &:nth-child(#{$i}) { 
+             -webkit-animation-delay: (0.2s * $i);
+            -moz-animation-delay: (0.2s * $i);
+            animation-delay: (0.2s * $i);
+          }
+       }
+}
+
+
+

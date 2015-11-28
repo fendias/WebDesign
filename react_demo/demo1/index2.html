@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>React声明周期</title>
+    <link rel="stylesheet" href="">
+    <script src="js/react.js"></script>
+    <script src="js/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <script type="text/jsx">
+        var Hello = React.createClass({
+            getInitialState: function(){
+                alert("getInitialState");
+                return {
+                    opacity: 1.0,
+                    fontSize: '20px'
+                }
+            },
+            render: function(){
+                return <div style={this.state}>Hello, {this.props.name}</div>;
+            },
+            componentWillMount: function(){
+                alert("component will mount");
+            },
+            componentDidMount: function(){
+                alert("component did");
+
+                window.setTimeout(function(){
+                    this.setState({
+                        opacity: 0.5,
+                        fontSize: '44px'
+                    });
+                }.bind(this), 1000);
+            }
+        });
+
+        React.render(<Hello name="world"/>,
+            document.getElementById("container"));
+    </script>
+</body>
+</html>
