@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <!--react.js-->
+    <script src="js/react.js"></script>
+    <!--解析JSX-->
+    <script src="js/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    
+    <!--JSX的声明需要是type="text/jsx"-->
+    <script type="text/jsx">
+    var Hello = React.createClass({
+        getInitialState: function () {
+            return {
+                password: ''
+            };
+        },
+        handleKeyPress: function (event) {
+            this.setState({password: this.state.password+event.which});
+            console.log(this.state);
+        },
+        handleChange: function(event){
+            event.target.value = '';
+        },
+        render: function(){
+            console.log(this.state);
+            return <div>
+            <input type="text" onKeyPress={this.handleKeyPress} onChange={this.handleChange} />
+            <p style={{'display': this.state.password.indexOf('495051') >= '0' ? 'inline': 'none'}}>you got it!</p>
+            </div>;
+        }
+    });
+    React.render(<Hello/>, 
+        document.getElementById('container'));
+    </script>
+</body>
+</html>

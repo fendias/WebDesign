@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <!--react.js-->
+    <script src="js/react.js"></script>
+    <!--解析JSX-->
+    <script src="js/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    
+    <!--JSX的声明需要是type="text/jsx"-->
+    <script type="text/jsx">
+    var Hello = React.createClass({
+        getInitialState: function () {
+            return {
+                backgroundColor: '#FFFFFF'
+            };
+        },
+        handleWheel: function (event) {
+            var newColor = (parseInt(this.state.background.substr(1), 16) + 
+                event.deltaY * 977).toString(16);
+            newColor = '#' + newColor.substr(newColor.length-6).toUpperCase();
+            this.setState({backgroundColor: newColor});
+        },
+        render: function(){
+            console.log(this.state);
+            return <div onWheel={this.handleWheel} style={this.state}><p>Hello world</p></div>;
+        }
+    });
+    React.render(<Hello/>, 
+        document.getElementById('container'));
+    </script>
+</body>
+</html>
