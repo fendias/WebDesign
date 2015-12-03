@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <!--react.js-->
+    <script src="js/react.js"></script>
+    <!--解析JSX-->
+    <script src="js/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    <!--JSX的声明需要是type="text/jsx"-->
+    <script type="text/jsx">
+    var Hello = React.createClass({
+        render: function(){
+            return <ul>
+                <li key="1">1</li>
+                <li key="2">2</li>
+                <li key="3">3</li>
+            </ul>
+        }
+    });
+    React.render(<Hello name="world"/>, 
+        document.getElementById('container'));
+    </script>
+</body>
+</html>
