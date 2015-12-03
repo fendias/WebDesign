@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <!--react.js-->
+    <script src="js/react.js"></script>
+    <!--解析JSX-->
+    <script src="js/JSXTransformer.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+    
+    <!--JSX的声明需要是type="text/jsx"-->
+    <script type="text/jsx">
+    var HelloWorld = React.createClass({
+        render: function(){
+            console.log("4");
+            return <div>Hello, {this.props.name || "world"}</div>;
+        },
+        componentWillUnmount: function(){
+            console.log("component will unmount!");
+        }
+    });
+
+    var HelloUniverse = React.createClass({
+        getInitialState: function(){
+            return {name: ''};
+        },
+        handleChange: function(event){
+            if (event.target.value == '123') {
+                React.unmountComponentAtNode(document.getElementsByTagName("body")[0]);
+                return;
+            }
+            this.setState({name: event.target.value});
+        },
+        render: function(){
+            return <div>
+                <HelloWorld name={this.state.name}></HelloWorld>
+                <br/>
+                <input type="text" onChange={this.handleChange} />
+            </div>;
+        }
+    });
+    React.render(<HelloUniverse ></HelloUniverse>, 
+        document.getElementById('container'));
+    </script>
+</body>
+</html>
