@@ -1,6 +1,8 @@
 .wrapper{
   width: 960px;
   margin: 0 auto;
+
+  @extend .clearfix;
 }
 
 .main-container{
@@ -87,7 +89,6 @@ ul.project-list{
     list-style: none;
     padding: 14px 20px 20px 90px;
     position: relative;
-
     margin: 0;
 
     &:nth-child(2n){background-color:$bg-default-color;} /* 偶数 */

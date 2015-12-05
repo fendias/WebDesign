@@ -1,0 +1,78 @@
+@mixin project_info(){
+  padding: 14px 20px 20px 90px;
+  position: relative;
+  margin: 0;
+
+  //类别
+  .project-cat{
+    float: left;
+    width: 64px;
+    height: 64px;
+    margin-left: -76px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: $project-cat-color;
+    text-align: center;
+    font-size:16px;
+    position: relative;
+
+    a{
+      position: absolute;
+      top:50%;left:50%;transform:translate(-50%,-50%);
+      color: $color;
+    }
+  }
+
+  header{
+    position: relative;
+    margin-top:6px;
+    height: 34px;
+
+    //标题
+    h2{
+      font-size: 18px;
+      //margin-right: 144px;
+      float: left;
+      font-weight: bold;
+      margin-bottom: 0px;
+      a{
+        color: $color;
+      }
+    }
+
+    .handle-area{
+      //top: 0;
+      display: inline-block;
+      padding-top: 6px;
+      float:left;
+      bottom: 0;
+
+      a{
+        color: $text-default-color;
+      }
+    }
+
+    &:after{
+      display: table;
+      content: " ";
+      clear:both;
+    }
+  }
+
+  .info{
+    color: $text-default-color;
+    //用户
+    a{
+      color: $text-default-color;
+    }
+  }
+
+  //状态
+  .status{
+    background-color: #D9D9D9;
+    color: $button-default-color;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 1px 6px;
+  }
+}

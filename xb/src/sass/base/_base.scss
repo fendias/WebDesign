@@ -4,3 +4,35 @@
   top:50%;left:50%;
   transform:translate(-50%,-50%);
 }
+
+.clearfix{
+  &:after{
+    display: table;
+    content: " ";
+    clear: both;
+  }
+}
+
+.padding{
+  padding: 16px !important;
+}
+
+.padding-top{
+  padding-top: 16px !important;
+}
+
+.padding-bottom{
+  padding-bottom: 16px !important;
+}
+
+.margin{
+  margin: 16px !important;
+}
+
+.margin-top{
+  margin-top: 16px !important;
+}
+
+.margin-bottom{
+  margin-bottom: 16px !important;
+}
