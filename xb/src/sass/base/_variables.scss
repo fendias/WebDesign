@@ -1,6 +1,8 @@
 $border-color: #D9D9D9;
+$box-border-color: #B4B4B4;
 $color: #333333;
 $button-default-color: #666666;
+$text-default-color: #B4B4B4;
 
 /*.header*/
 $header-bgColor: #D9D9D9;
@@ -22,7 +24,7 @@ $navbar-menu-vmargin: 10px; //菜单项间距
 
 
 /*-----------box----------*/
-$box-border: 1px solid #B4B4B4;
+$box-border: 1px solid $box-border-color;
 
 /*----------filters--------*/
 $condition-title-color: #B4B4B4;

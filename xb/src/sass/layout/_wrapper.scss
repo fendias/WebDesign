@@ -47,4 +47,35 @@
 
 .projects{
   margin-top: $projects-mtop;
+
+  &-head {
+    height: 30px;
+    background-color: #EEEEEE;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid $box-border-color;
+    font-size: 13px;
+
+    span{
+      line-height: 30px;
+
+      a{
+        color: $text-default-color;
+        display: inline-block;
+        height:31px;
+        &.info{
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+
+        &.active{
+          color: $button-default-color;
+          margin-top: -1px;
+          //margin-bottom: -2px;
+          background: #FFF;
+          border: 1px solid $box-border-color;
+        }
+      }
+    }
+  }
 }

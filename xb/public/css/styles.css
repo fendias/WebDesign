@@ -322,6 +322,32 @@ nav .user-panel button {
 .projects {
   margin-top: 38px;
 }
+.projects-head {
+  height: 30px;
+  background-color: #EEEEEE;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid #B4B4B4;
+  font-size: 13px;
+}
+.projects-head span {
+  line-height: 30px;
+}
+.projects-head span a {
+  color: #B4B4B4;
+  display: inline-block;
+  height: 31px;
+}
+.projects-head span a.info {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.projects-head span a.active {
+  color: #666666;
+  margin-top: -1px;
+  background: #FFF;
+  border: 1px solid #B4B4B4;
+}
 
 .box {
   border: 1px solid #B4B4B4;
