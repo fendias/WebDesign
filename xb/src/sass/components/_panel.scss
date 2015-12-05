@@ -1,0 +1,32 @@
+.panel{
+  &-heading{
+    padding-bottom: 10px;
+    padding-left: 4px;
+    border-bottom: 1px solid $color;
+    h2{
+      padding-left: 4px;
+      margin: 0px;
+      font-size: 14px;
+      color: $color;
+    }
+  }
+
+  &-body{
+    padding: 6px 0 6px 0;
+    ul{
+      li{
+        font-size: 13px;
+        list-style: none;
+        padding-left: 4px;
+        padding-bottom: 2px;
+        padding-top: 16px;
+        margin-left: 0;
+        border-bottom: 1px solid $border-color;
+
+        a{
+          color: #8C8C8C;
+        }
+      }
+    }
+  }
+}
