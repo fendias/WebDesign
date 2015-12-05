@@ -1,0 +1,96 @@
+nav{
+  margin: 0 auto;
+  width: $navbar-width;
+
+  ul{
+    list-style: none;
+    margin:0;
+    float: $navbar-menu-float;
+    font-size:15px;
+
+    li{
+      display: inline-block;
+      line-height: $navbar-height;
+      margin-left: $navbar-menu-vmargin;
+      margin-right: $navbar-menu-vmargin;
+      width: $navbar-menu-width;
+
+      a{
+        //line-height: $navbar-height;
+        display: inline-block;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: $navbar-menu-color;
+
+        &.active{
+          border-bottom: 2px solid $navbar-menu-active-color;
+          color: $navbar-menu-active-color;
+          //padding-bottom: -2px;
+          //font-weight: bolder;
+        }
+
+        &:hover, &:active{
+          text-decoration: none;
+          border-bottom: 2px solid $navbar-menu-active-color;
+          color: $navbar-menu-active-color;
+        }
+      }
+    }
+  }
+
+  .user-panel{
+    display:inline-block;
+    line-height: $navbar-height;
+    float:right;
+
+    a{
+      display: inline-block;
+      margin: auto 10px;
+      color: $navbar-menu-active-color;
+
+      &:hover, &:active{
+        text-decoration: none;
+      }
+    }
+
+    a.btn-add {
+      background-color: #fff;
+      width: 96px;
+      padding-left: 6px;
+      padding-right: 6px;
+
+      &:hover, &:active{
+        background-color: #1B9AF7;
+      }
+    }
+
+    a.message {
+      font-size: 16px;
+    }
+
+    a.user{
+      font-size: 1.1rem;
+      margin-left: 8px;
+      i{
+        font-size: 1.2rem;
+      }
+    }
+
+    span.timezone{
+      font-size: 14px;
+    }
+
+    div.btn-group.bootstrap-select{
+      width: 80px !important;
+
+      .dropdown-menu{
+        width: 138px;
+      }
+    }
+    button{
+      background-color: transparent;
+      border-color: transparent;
+      width: 80px;
+    }
+  }
+}
