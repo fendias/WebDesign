@@ -1,3 +1,11 @@
 .underline{
   border-bottom: 1px solid $border-color;
 }
+
+.hint{
+  font:{
+    size: 14px;
+    weight: bold;
+  }
+  text-align: center;
+}
