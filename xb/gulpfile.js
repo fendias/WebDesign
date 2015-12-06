@@ -38,6 +38,8 @@ gulp.task('styles', function() {
 });
 
 gulp.task("copy",["styles"], function(){
+    gulp.src(["src/images/**"])
+        .pipe(gulp.dest('public/images'));
     return gulp.src(["src/fonts/**"])
         .pipe(gulp.dest('public/fonts'));
 });

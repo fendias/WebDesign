@@ -21,3 +21,47 @@
 }
 
 //评论列表
+ul.comments-list{
+  margin:{
+    top: 16px;
+  }
+
+  li.comment{
+    list-style: none;
+    position: relative;
+    line-height: 24px;
+
+    margin:{
+      left: 0px;
+    }
+
+    padding:{
+      left: 48px;
+      top: 16px;
+      bottom: 10px;
+    }
+
+    border:{
+      top: 1px solid $border-color;
+    }
+
+    font-size: 14px;
+    color: $color;
+
+    > img.user-avatar{
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left:0;
+      margin:{
+        top:18px;
+      }
+    }
+
+    .xueba-name{
+      font:{
+        weight: bold;
+      }
+    }
+  }
+}
