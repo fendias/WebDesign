@@ -454,8 +454,8 @@ ul.project-list li .info a {
   color: #B4B4B4;
 }
 ul.project-list li .status {
-  background-color: #D9D9D9;
-  color: #666666;
+  background-color: #FF4351;
+  color: #fff;
   border-radius: 10px;
   display: inline-block;
   padding: 1px 6px;
@@ -2432,8 +2432,8 @@ ul.project-list li .status {
   color: #B4B4B4;
 }
 .project-info .status {
-  background-color: #D9D9D9;
-  color: #666666;
+  background-color: #FF4351;
+  color: #fff;
   border-radius: 10px;
   display: inline-block;
   padding: 1px 6px;
