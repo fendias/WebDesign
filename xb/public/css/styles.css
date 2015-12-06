@@ -241,6 +241,10 @@ body {
   content: "\e906";
 }
 
+.underline {
+  border-bottom: 1px solid #D9D9D9;
+}
+
 .header {
   background: #D9D9D9;
   height: 52px;
@@ -2885,4 +2889,37 @@ div.title span {
 }
 .carry-process-step.disabled {
   color: #D9D9D9;
+}
+
+ul.file-list {
+  margin-top: 14px;
+  list-style: none;
+}
+ul.file-list li {
+  margin-left: 0;
+  margin-top: 6px;
+  margin-bottom: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 4px;
+}
+ul.file-list li .file-info {
+  font-size: 13px;
+  font-weight: bolder;
+  line-height: 20px;
+}
+ul.file-list li .file-info a {
+  color: #333333;
+}
+ul.file-list li .file-user-info {
+  position: relative;
+  line-height: 18px;
+  font-size: 12px;
+  margin-left: 12px;
+  padding-left: 20px;
+}
+ul.file-list li .file-user-info img {
+  position: absolute;
+  top: 1px;
+  left: 0px;
 }

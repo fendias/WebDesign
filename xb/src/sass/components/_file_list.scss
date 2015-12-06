@@ -1,0 +1,46 @@
+//文件列表
+ul.file-list{
+  margin:{
+    top: 14px;
+  }
+  list-style: none;
+
+  li{
+    margin: {
+      left: 0;
+      top: 6px;
+      bottom: 0;
+      right: 0;
+    }
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 4px;
+
+    .file-info{
+      font-size: 13px;
+      font-weight: bolder;
+      line-height: 20px;
+
+      a{
+        color: $color;
+      }
+    }
+
+    .file-user-info{
+      position: relative;
+      line-height: 18px;
+      font-size: 12px;
+      margin: {
+        left: 12px;
+      }
+      padding: {
+        left: 20px;
+      }
+
+      img{
+        position: absolute;
+        top: 1px;
+        left: 0px;
+      }
+    }
+  }
+}
