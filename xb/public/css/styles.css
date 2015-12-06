@@ -2350,6 +2350,11 @@ ul.project-list li .status {
   padding: 0 10px;
 }
 
+.xb-info-label {
+  color: #B4B4B4;
+  font-size: 12px;
+}
+
 .xb-panel {
   border-width: 0px;
 }
