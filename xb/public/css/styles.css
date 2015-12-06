@@ -2499,3 +2499,33 @@ ul.project-list li .status {
 .deadline-panel .local-time:nth-child(2n) {
   border-top: 1px solid #D9D9D9;
 }
+
+.inivite-xueba {
+  margin-top: 10px;
+}
+.inivite-xueba #xueba_name {
+  width: 164px;
+  height: 36px;
+  font-size: 16px;
+}
+.inivite-xueba button.button {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.inivite-xueba .invited a {
+  text-decoration: none;
+}
+.inivite-xueba .invited span {
+  display: inline-block;
+  line-height: 38px;
+  font-size: 14px;
+}
+.inivite-xueba .invited span.invited-list a {
+  display: inline-block;
+  margin-left: 2px;
+}
+.inivite-xueba .invited span.invited-list i {
+  font-size: 24px;
+}

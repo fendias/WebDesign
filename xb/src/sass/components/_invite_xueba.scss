@@ -1,0 +1,46 @@
+//邀请学霸
+
+.inivite-xueba{
+  margin:{
+    top: 10px;
+  }
+  #xueba_name{
+    width: 164px;
+    height: 36px;
+    font-size: 16px;
+  }
+
+  button.button{
+    padding:{
+      left: 10px;
+      right: 10px;
+    }
+    margin:{
+      left: 10px;
+    }
+    font:{
+      weight: bold;
+    }
+  }
+
+  .invited{
+    a{
+      text-decoration: none;
+    }
+    span{
+      display: inline-block;
+      line-height: 38px;
+      font-size: 14px;
+    }
+
+    span.invited-list{
+      a{
+        display: inline-block;
+        margin-left: 2px;
+      }
+      i{
+        font-size: 24px;
+      }
+    }
+  }
+}
