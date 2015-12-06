@@ -75,10 +75,50 @@
       left:1px solid $border-color;
       right:1px solid $border-color;
     }
+
+    ul{
+      li{
+        list-style:none;
+        line-height: 36px;
+        font-size:14px;
+        color: $color;
+        padding:{
+          left:10px;
+          right:4px;
+        }
+        margin:{
+          left:0;
+        }
+        border:{
+          bottom: 1px solid $border-color;
+        }
+
+        span{
+          display:inline-block;
+
+        }
+
+        strong{
+          font-weight:bold;
+        }
+
+        p{
+          font:{
+            size: 14px;
+          }
+          line-height: 16px;
+        }
+      }
+
+      li:last-child{
+        border:none;
+      }
+    }
   }
 
   &-part3{
     width: 176px;
+    position: relative;
   }
 
   &:after{
