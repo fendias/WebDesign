@@ -1,0 +1,22 @@
+div.title{
+  h1{
+    float:left;
+    width: 600px;
+    font:{
+      size:18px;
+      weight: bold;
+    }
+
+    margin:{
+      bottom: 8px;
+    }
+
+
+  }
+
+  span{
+    color: $text-default-color;
+  }
+
+  @extend .clearfix;
+}

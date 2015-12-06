@@ -150,7 +150,7 @@ body {
           transform: translate(0, -50%);
 }
 
-.clearfix:after, .wrapper:after {
+.clearfix:after, .wrapper:after, div.title:after {
   display: table;
   content: " ";
   clear: both;
@@ -2717,4 +2717,15 @@ ul.comments-list li.comment .xueba-name {
   display: table;
   content: " ";
   clear: both;
+}
+
+div.title h1 {
+  float: left;
+  width: 600px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+div.title span {
+  color: #B4B4B4;
 }
