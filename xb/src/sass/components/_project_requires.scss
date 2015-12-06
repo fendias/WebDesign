@@ -18,4 +18,23 @@
       }
     }
   }
+
+  ul.attach-list{
+    margin-bottom: 0;
+    li{
+      list-style-type: none;
+      margin-left: 16px;
+      color: $text-default-color;
+
+      a{
+        color: $color;
+        font-size:13px;
+        font-weight: bold;
+      }
+
+      span{
+        font-weight:bold;
+      }
+    }
+  }
 }

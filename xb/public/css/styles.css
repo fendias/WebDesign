@@ -2452,3 +2452,19 @@ ul.project-list li .status {
 .requires .require p:last-child {
   margin-bottom: 16px;
 }
+.requires ul.attach-list {
+  margin-bottom: 0;
+}
+.requires ul.attach-list li {
+  list-style-type: none;
+  margin-left: 16px;
+  color: #B4B4B4;
+}
+.requires ul.attach-list li a {
+  color: #333333;
+  font-size: 13px;
+  font-weight: bold;
+}
+.requires ul.attach-list li span {
+  font-weight: bold;
+}
