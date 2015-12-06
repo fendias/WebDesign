@@ -1,0 +1,36 @@
+.carry-persons-display{
+
+  line-height: 64px;
+  color: $color;
+  font:{
+    size: 14px;
+    //weight: bold;
+  }
+  span, a{
+    display: inline-block;
+  }
+  a{
+    position:relative;
+
+    font:{
+      weight: bold;
+    }
+
+    margin:{
+      left: 10px;
+      right: 4px;
+    }
+
+    img{
+      padding: 0;
+      bottom: 0;
+      position: relative;
+      left:0px;
+      top:16px;
+    }
+  }
+
+  .badge{
+    margin-right: 48px;
+  }
+}

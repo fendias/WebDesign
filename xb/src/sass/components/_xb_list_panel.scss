@@ -1,5 +1,39 @@
 //列表面板
-.xb-list-panel{
+ul.xb-list-panel{
   @extend .box;
 
+  padding: 12px;
+
+  li{
+    list-style: none;
+    line-height: 38px;
+    color: $text-default-color;
+    font:{
+      font-size: 14px;
+    }
+
+    margin: 0;
+
+    padding: {
+      left:12px;
+      //top:6px;
+    }
+
+    border-bottom: 1px solid $border-color;
+
+    strong{
+      color: $color;
+      font-weight:bold;
+    }
+
+    &:last-child{
+      border-bottom: none;
+    }
+
+    p{
+      color: $color;
+      margin-bottom: 6px;
+      line-height: 28px;
+    }
+  }
 }

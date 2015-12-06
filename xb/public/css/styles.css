@@ -472,7 +472,7 @@ ul.project-list li .status {
   padding: 1px 6px;
 }
 
-.box, .xb-list-panel {
+.box, ul.xb-list-panel {
   border: 1px solid #B4B4B4;
 }
 
@@ -2425,6 +2425,31 @@ ul.project-list li .status {
   padding: 6px;
 }
 
+ul.xb-list-panel {
+  padding: 12px;
+}
+ul.xb-list-panel li {
+  list-style: none;
+  line-height: 38px;
+  color: #B4B4B4;
+  font-font-size: 14px;
+  margin: 0;
+  padding-left: 12px;
+  border-bottom: 1px solid #D9D9D9;
+}
+ul.xb-list-panel li strong {
+  color: #333333;
+  font-weight: bold;
+}
+ul.xb-list-panel li:last-child {
+  border-bottom: none;
+}
+ul.xb-list-panel li p {
+  color: #333333;
+  margin-bottom: 6px;
+  line-height: 28px;
+}
+
 .xb-panel {
   border-width: 0px;
 }
@@ -2780,6 +2805,31 @@ ul.comments-list li.comment .xueba-name {
   display: table;
   content: " ";
   clear: both;
+}
+
+.carry-persons-display {
+  line-height: 64px;
+  color: #333333;
+  font-size: 14px;
+}
+.carry-persons-display span, .carry-persons-display a {
+  display: inline-block;
+}
+.carry-persons-display a {
+  position: relative;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 4px;
+}
+.carry-persons-display a img {
+  padding: 0;
+  bottom: 0;
+  position: relative;
+  left: 0px;
+  top: 16px;
+}
+.carry-persons-display .badge {
+  margin-right: 48px;
 }
 
 div.title h1 {
