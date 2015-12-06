@@ -2438,3 +2438,17 @@ ul.project-list li .status {
   display: inline-block;
   padding: 1px 6px;
 }
+
+.requires .require > h4, .requires .attach > h4 {
+  font-size: 13px;
+  border-bottom: 1px solid #b4b4b4;
+  color: #B4B4B4;
+}
+.requires .require p {
+  font-size: 14px;
+  padding-left: 16px;
+  margin-bottom: 4px;
+}
+.requires .require p:last-child {
+  margin-bottom: 16px;
+}

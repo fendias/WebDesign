@@ -1,0 +1,21 @@
+.requires{
+  .require, .attach{
+    > h4{
+      font-size: 13px;
+      border-bottom: 1px solid #b4b4b4;
+      color: $text-default-color;
+    }
+  }
+
+  .require{
+    p{
+      font-size: 14px;
+      padding-left: 16px;
+      margin-bottom: 4px;
+
+      &:last-child{
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
