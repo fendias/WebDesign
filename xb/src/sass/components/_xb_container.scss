@@ -1,0 +1,35 @@
+//panel的替代品
+
+.xb-container{
+
+  @include flex-container(column);
+
+  &-head{
+    @include flex-container();
+
+    padding: 4px;
+    height: 42px;
+    line-height: 34px;
+
+    h1, h2, h3, h4, h5, h6{
+      @include flex-sub();
+      font:{
+        size: 14px;
+        weight: bold;
+      }
+      margin: 0;
+    }
+
+    &-head-sub{
+
+    }
+  }
+
+  &-body{
+    @include flex-sub();
+  }
+
+  &-end{
+    padding: 6px;
+  }
+}

@@ -1,0 +1,45 @@
+.carry-process{
+  @include flex-container();
+  padding: {
+    top: 16px;
+    left: 24px;
+    right: 24px;
+    bottom: 16px;
+  }
+  background:{
+    color: $bg-default-color;
+  }
+
+  > div{
+
+  }
+
+  &-arrow{
+    @include flex-sub();
+    //position: relative;
+    text-align: center;
+    color: $text-default-color;
+    padding: {
+      top: 20px;
+    }
+  }
+
+  &-step{
+    text-align: center;
+    width: 185px;
+    font:{
+      size: 14px;
+    }
+    > div {
+      margin: {
+        bottom: 16px;
+        left: auto;
+        right: auto;
+      }
+    }
+  }
+
+  &-step.disabled{
+    color: $text-disabled-color;
+  }
+}

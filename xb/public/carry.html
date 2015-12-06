@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header  id="header" class="header clearfix">
+<header id="header" class="header clearfix">
     <nav class="nav">
         <ul>
             <li><a href="#" class="logo">Logo</a></li>
@@ -46,30 +46,81 @@
             找靠谱英国代写老师 marketing论文2500words
         </h1>
         <span class="pull-right">
-            <label for="is_anonymous">匿名状态</label>&nbsp;<input name="is_anonymous" type="checkbox" checked />
+            <label for="is_anonymous">匿名状态</label>&nbsp;<input name="is_anonymous" id="is_anonymous" type="checkbox"
+                                                               checked/>
         </span>
     </div>
 </div>
 <div class="wrapper">
     <div class="main-container">
+        <div class="box xb-container">
+            <header class="xb-container-head"><h2 class="">项目进展</h2>
+                <button class="button button-xb-sm button-rounded button-small">取消申请</button>
+            </header>
+            <div class="carry-process xb-container-body">
+                <div class="carry-process-step">
+                    <div>
+                       <span class="button-wrap">
+                        <button class="button button-circle button-highlight">
+                            1
+                        </button>
+                    </span>
+                    </div>
 
-        <div class="carry box">
-            <div class="carry-process"></div>
-            <div class="carry-detail">
-                <ul>
-                    <li>
-                        参与者<a><img src="images/user-avatar-45.png" alt="avatar">&nbsp;王晓华</a><span
-                                                                                                    class="label">学匿</span>
-                        <a href="#">小霸王</a><span class="label">学霸</span>
-                    </li>
-                    <li><span>所需时间</span>&nbsp;<strong>2day</strong></li>
-                    <li><span>成交价格</span>&nbsp;<strong>$100.00</strong></li>
-                    <li><span>学习目标</span>&nbsp;<strong>60%稳过</strong></li>
-                    <li><span>补充说明</span><p>上学我这门课拿了A+，让我来帮助你，而且我们在一个校区，可以面对面辅导，你有什么需要帮助的也可以随时找我！</p></li>
-                </ul>
+                    <span>学匿托管金额</span>
+                </div>
+                <div class="carry-process-arrow">
+                    <i class="icon-arrow-right"></i>
+                </div>
+                <div class="carry-process-step disabled">
+                    <div>
+                       <span class="button-wrap">
+                        <button class="button button-circle button-highlight disabled">
+                            2
+                        </button>
+                    </span>
+                    </div>
+                        <span>
+                        学霸carry学匿,学匿验收工作
+                        </span>
+                </div>
+                <div class="carry-process-arrow">
+                    <i class="icon-arrow-right"></i>
+                </div>
+                <div class="carry-process-step disabled">
+                    <div>
+                       <span class="button-wrap">
+                        <button class="button button-circle button-highlight disabled">
+                            3
+                        </button>
+                    </span>
+                    </div>
+                        <span>
+                        学匿确认付款,发出评价
+                        </span>
+                </div>
+            </div>
+            <div class="xb-container-end">
+                <button class="button button-small button-caution">支付</button>
             </div>
         </div>
-        <!--end of carry box-->
+        <!--end of .box.xb-container-->
+        <div class="carry-detail box margin-top">
+            <ul>
+                <li>
+                    参与者<a><img src="images/user-avatar-45.png" alt="avatar">&nbsp;王晓华</a><span
+                        class="label">学匿</span>
+                    <a href="#">小霸王</a><span class="label">学霸</span>
+                </li>
+                <li><span>所需时间</span>&nbsp;<strong>2day</strong></li>
+                <li><span>成交价格</span>&nbsp;<strong>$100.00</strong></li>
+                <li><span>学习目标</span>&nbsp;<strong>60%稳过</strong></li>
+                <li><span>补充说明</span>
+
+                    <p>上学我这门课拿了A+，让我来帮助你，而且我们在一个校区，可以面对面辅导，你有什么需要帮助的也可以随时找我！</p></li>
+            </ul>
+        </div>
+        <!--end of carry-detail-->
         <div class="divider">
             <p><i class="fa fa-exclamation-circle"></i>如果以后需要申请仲裁，管理员只参与一下会话</p>
         </div>
@@ -80,6 +131,7 @@
                     <textarea name="message" id="message" cols="30" rows="10">
 
                     </textarea>
+
                     <div>
                         <button>发送</button>
                     </div>
@@ -116,20 +168,24 @@
     <div class="sidebar">
         <div class="deadline-panel box">
             <h5>Deadline</h5>
+
             <div class="deadline-panel-body">
                 <div class="local-time">
                     <p>我的当地时间</p>
+
                     <p class="date-info"><span class="date">2015-11-07 12:49:14</span> <i class="icon-sun"></i></p>
                 </div>
                 <div class="local-time">
                     <p>学匿的当地时间</p>
+
                     <p class="date-info"><span class="date">2015-11-07 12:49:14</span> <i class="icon-moon"></i></p>
                 </div>
             </div>
         </div>
         <div class="xb-panel margin-top">
-            <div class="xb-panel-heading"  style="font-weight:bold; padding-bottom: 4px">
-                <h2>carry文件列表</h2> <button class="button button-xb button-caution">上传</button>
+            <div class="xb-panel-heading" style="font-weight:bold; padding-bottom: 4px">
+                <h2>carry文件列表</h2>
+                <button class="button button-xb button-caution">上传</button>
             </div>
             <div class="xb-panel-body">
                 <ul>
