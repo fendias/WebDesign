@@ -1,8 +1,14 @@
 //垂直居中
-.vcenter{
+.center {
   position: absolute;
   top:50%;left:50%;
   transform:translate(-50%,-50%);
+}
+
+.vcenter{
+  position: absolute;
+  top:50%;
+  transform:translate(0,-50%);
 }
 
 .clearfix{

@@ -135,12 +135,19 @@ body {
 /*-----------box----------*/
 /*----------filters--------*/
 /*----------projects------*/
-.vcenter {
+.center {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.vcenter {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 .clearfix:after, .wrapper:after {
@@ -2480,6 +2487,38 @@ ul.project-list li .status {
 }
 .requires ul.attach-list li span {
   font-weight: bold;
+}
+
+.post_comment {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-display: normal;
+  -webkit-box-direction: normal;
+  -moz-box-lines: multiple;
+  -webkit-box-lines: multiple;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative;
+}
+.post_comment > div {
+  position: relative;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.post_comment textarea {
+  display: block;
+  width: 574px;
+}
+.post_comment button {
+  display: inline-block;
 }
 
 .deadline-panel {

@@ -1,0 +1,23 @@
+//项目评论
+
+//发表评论
+.post_comment{
+  @include flex-container();
+  position: relative;
+
+  > div{
+    position:relative;
+    @include flex-sub();
+  }
+
+  textarea{
+    display:block;
+    width: 574px;
+  }
+
+  button{
+    display: inline-block;
+  }
+}
+
+//评论列表
