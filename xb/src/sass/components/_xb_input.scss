@@ -1,0 +1,30 @@
+//input控件
+
+div.xb-search-input{
+  display: inline-block;
+
+  input[type=text]{
+    font:{
+      size: 16px;
+    }
+    padding: {
+      left: 18px;
+      right: 32px;
+      top: 6px;
+      bottom: 8px;
+    }
+    border: 1px solid $border-color;
+    border-radius: 20px;
+    //-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    //-moz-box-shadow: inset 0 0 10px  rgba(0, 0, 0, 0.5);
+    //box-shadow: inset 0 0 10px  rgba(0, 0, 0, 0.5);
+  }
+
+  .xb-button-search{
+    margin:{
+      top: -2px;
+      left: -38px;
+    }
+
+  }
+}

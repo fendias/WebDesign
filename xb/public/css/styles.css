@@ -2385,6 +2385,25 @@ ul.project-list li .status {
   font-size: 12px;
 }
 
+.xb-category-card {
+  width: 64px;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #E8E8E8;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
+.xb-category-card a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #333333;
+}
+
 .xb-container {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -2617,23 +2636,21 @@ ul.xb-list-panel li p {
   line-height: 28px;
 }
 
-.xb-category-card {
-  width: 64px;
-  height: 64px;
-  padding-left: 16px;
-  padding-right: 16px;
-  background-color: #E8E8E8;
-  text-align: center;
-  font-size: 16px;
-  position: relative;
+div.xb-search-input {
+  display: inline-block;
 }
-.xb-category-card a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #333333;
+div.xb-search-input input[type=text] {
+  font-size: 16px;
+  padding-left: 18px;
+  padding-right: 32px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+}
+div.xb-search-input .xb-button-search {
+  margin-top: -2px;
+  margin-left: -38px;
 }
 
 .xb-panel {
