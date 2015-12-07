@@ -1,0 +1,84 @@
+//过滤面板
+.xb-filter-panel{
+  border: $box-border;
+  padding:10px;
+  @include flex-container();
+}
+
+.xb-filter-panel-sub{
+  @include flex-container();
+
+  margin:{
+    top: 12px;
+    bottom: 12px;
+  }
+
+  font:{
+    size: 14px;
+  }
+}
+
+.xb-filter-panel-sub-title{
+  color: $text-default-color;
+  > div{
+    width: 100%;
+    border:{
+      right: 1px solid $border-color;
+    }
+    padding:{
+      right: 20px;
+    }
+  }
+}
+
+.xb-filter-panel-sub-selectors{
+  @include flex-sub();
+
+  padding: {
+    left: 12px;
+  }
+
+  ul{
+    margin:{
+      bottom:0;
+    }
+    li{
+      display: inline-block;
+      margin: 0 13px;
+    }
+  }
+
+  a{
+    display: block;
+    color: $color;
+
+    padding: 2px 6px;
+    margin:{
+      bottom: 10px;
+    }
+    line-height: 24px;
+
+    &.active{
+      color: #FFF;
+
+      background:{
+        color: $button-bg-default-color;
+      }
+
+      border-radius: 2px;
+    }
+
+    &:hover, &:active{
+      color: red;
+    }
+  }
+}
+
+.xb-filter-panel-1{
+  @include flex-sub();
+}
+
+.xb-filter-panel-2{
+  width: 300px;
+  padding:14px;
+}

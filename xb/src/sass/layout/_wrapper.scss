@@ -38,7 +38,7 @@
         line-height: 24px;
 
         &.active{
-          background-color: $button-default-color;
+          background-color: $button-bg-default-color;
           color: #FFF;
           border-radius: 2px;
         }
@@ -71,7 +71,7 @@
         }
 
         &.active{
-          color: $button-default-color;
+          color: $button-bg-default-color;
           margin-top: -1px;
           //margin-bottom: -2px;
           background: #FFF;
