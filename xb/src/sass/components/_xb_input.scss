@@ -28,3 +28,11 @@ div.xb-search-input{
 
   }
 }
+
+input[type=text].small{
+
+  width:112px;
+  //-webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  //-moz-box-shadow: inset 0 0 10px  rgba(0, 0, 0, 0.5);
+  //box-shadow: inset 0 0 10px  rgba(0, 0, 0, 0.5);
+}

@@ -70,9 +70,24 @@
       width: 100%;
       height: 80px;
       resize: vertical;
+      border: 1px solid $border-color;
+    }
+  }
+
+  .xb-form-group-inline{
+    @include flex-container();
+
+    .xb-form-group{
+      margin:{
+        right: 8px;
+      }
     }
 
-
+    .xb-form-group:last-child{
+      margin:{
+        right: 0;
+      }
+    }
   }
 }
 

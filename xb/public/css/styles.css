@@ -2609,6 +2609,51 @@ ul.project-list li .status {
   width: 100%;
   height: 80px;
   resize: vertical;
+  border: 1px solid #D9D9D9;
+}
+.xb-form-body .xb-form-group-inline {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-display: normal;
+  -webkit-box-direction: normal;
+  -moz-box-lines: multiple;
+  -webkit-box-lines: multiple;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.xb-form-body .xb-form-group-inline .xb-form-group {
+  margin-right: 8px;
+}
+.xb-form-body .xb-form-group-inline .xb-form-group:last-child {
+  margin-right: 0;
+}
+
+div.xb-search-input {
+  display: inline-block;
+}
+div.xb-search-input input[type=text] {
+  font-size: 16px;
+  padding-left: 18px;
+  padding-right: 32px;
+  padding-top: 6px;
+  padding-bottom: 8px;
+  border: 1px solid #D9D9D9;
+  border-radius: 20px;
+}
+div.xb-search-input .xb-button-search {
+  margin-top: -2px;
+  margin-left: -38px;
+}
+
+input[type=text].small {
+  width: 112px;
 }
 
 ul.xb-list-panel {
@@ -2636,21 +2681,8 @@ ul.xb-list-panel li p {
   line-height: 28px;
 }
 
-div.xb-search-input {
-  display: inline-block;
-}
-div.xb-search-input input[type=text] {
-  font-size: 16px;
-  padding-left: 18px;
-  padding-right: 32px;
-  padding-top: 6px;
-  padding-bottom: 8px;
-  border: 1px solid #D9D9D9;
-  border-radius: 20px;
-}
-div.xb-search-input .xb-button-search {
-  margin-top: -2px;
-  margin-left: -38px;
+.xb-modal-dialog {
+  width: 500px;
 }
 
 .xb-panel {

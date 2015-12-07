@@ -97,7 +97,7 @@
         <div class="xb-panel margin-top">
             <div class="xb-panel-body">
                 <div style="text-align: center">
-                    <button class="button button-caution" style="display: inline-block">我来Carry</button>
+                    <button class="button button-caution" style="display: inline-block" data-toggle="modal" data-target="#i_carry">我来Carry</button>
                 </div>
             </div>
         </div>
@@ -204,6 +204,47 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="i_carry" tabindex="-1" role="dialog" aria-labelledby="i_carry">
+    <div class="modal-dialog xb-modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="#" class="xb-form padding-bottom">
+                <div class="xb-form-head">
+                    <div class="xb-form-head-left"><a href="#" data-dismiss="modal">取消</a></div>
+                    <h1 class="xb-form-head-center">我来carry</h1>
+                    <div class="xb-form-head-right">
+                        <button class="button button-small button-rounded button-caution margin-left" type="submit">确定</button>
+                    </div>
+                </div>
+                <div class="xb-form-body">
+                    <div class="xb-form-group-inline">
+                        <div class="xb-form-group">
+                            <label for="money">所需酬劳*</label>
+                            <input type="text" id="money" placeholder="$">
+                        </div>
+                        <div class="xb-form-group">
+                            <label for="days">所需时间*</label>
+                            <input type="text" id="days" class="small">day(s)
+                        </div>
+                    </div>
+                    <div class="xb-form-group">
+                        <label for="category">学习目标*</label>
+                        <select id="category" class="selectpicker" data-width="auto">
+                            <option>60%稳过</option>
+                            <option>80%稳过</option>
+                            <option>100%稳过</option>
+                        </select>
+                    </div>
+                    <div class="xb-form-group">
+                        <label for="detail">补充说明*</label>
+                        <textarea name="detail" id="detail" cols="30" rows="5"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
 <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
