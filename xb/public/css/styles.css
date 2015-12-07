@@ -2478,6 +2478,11 @@ ul.project-list li .status {
   margin-top: 12px;
   margin-bottom: 12px;
   font-size: 14px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.xb-filter-panel-sub:last-child {
+  border: none;
+  margin-bottom: 0;
 }
 
 .xb-filter-panel-sub-title {
