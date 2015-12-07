@@ -42,47 +42,54 @@
 </header>
 <div class="wrapper">
     <h2 class="hint">我们这儿都是来自清华北大的学霸，快来让真正的学霸带你飞吧</h2>
-
-    <form action="#">
-        <a href="#">取消</a>
-        <h1 class="title">发布需求</h1>
-        <input name="is_anonymous" id="is_anonymous" type="checkbox"/> <label for="is_anonymous">匿名状态</label>
-        <button class="button button-small button-rounded button-highlight" type="submit">发布</button>
-        <div class="form-group">
-            <label for="category">专业类别*</label>
-            <select id="category" class="selectpicker" data-width="auto">
-                <option>物理</option>
-                <option>伦敦</option>
-                <option>纽约</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="title">标题*</label>
-            <input type="text" class="form-control" id="title">
-        </div>
-        <div class="form-group">
-            <label for="detail">详细需求*</label>
-            <textarea name="detail" id="detail" cols="30" rows="10"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="special">特殊需求</label>
-            <textarea name="special" id="special" cols="30" rows="10"></textarea>
-        </div>
-        <div class="form-group">
-            <label for="deadline">Deadline*</label>
-            <div id="deadline">
-                <select id="timezone" class="selectpicker" data-width="auto">
-                    <option>北京</option>
-                    <option>伦敦</option>
-                    <option>纽约</option>
-                </select>
-                <input type="datetime" id="datetime">
+    <div style="margin-left:auto;margin-right:auto; margin-top: 24px; width: 702px;">
+        <form action="#" class="xb-form margin-top margin-bottom">
+            <div class="xb-form-head">
+                <div class="xb-form-head-left"><a href="#">取消</a></div>
+                <h1 class="xb-form-head-center">发布需求</h1>
+                <div class="xb-form-head-right">
+                    <span><input name="is_anonymous" id="is_anonymous" type="checkbox"/><label class="for-checkbox" for="is_anonymous"> 匿名状态</label></span>
+                    <button class="button button-small button-rounded button-highlight margin-left" type="submit">发布</button>
+                </div>
             </div>
-        </div>
-        <div>
-            <button class="button button-small button-rounded button-caution">上传附件</button>
-        </div>
-    </form>
+            <div class="xb-form-body">
+                <div class="xb-form-group">
+                    <label for="category">专业类别*</label>
+                    <select id="category" class="selectpicker" data-width="auto">
+                        <option>物理</option>
+                        <option>工商管理</option>
+                        <option>计算机</option>
+                    </select>
+                </div>
+                <div class="xb-form-group">
+                    <label for="title">标题*</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="xb-form-group">
+                    <label for="detail">详细需求*</label>
+                    <textarea name="detail" id="detail" cols="30" rows="5"></textarea>
+                </div>
+                <div class="xb-form-group">
+                    <label for="special">特殊需求</label>
+                    <textarea name="special" id="special" cols="30" rows="5"></textarea>
+                </div>
+                <div class="xb-form-group">
+                    <label for="deadline">Deadline*</label>
+                    <div id="deadline">
+                        <select id="timezone" class="selectpicker" data-width="auto">
+                            <option>北京</option>
+                            <option>伦敦</option>
+                            <option>纽约</option>
+                        </select>
+                        <input type="datetime" id="datetime">
+                    </div>
+                </div>
+                <div class="xb-form-group">
+                    <button class="button button-small button-rounded button-caution margin-top">上传附件</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
 
 
