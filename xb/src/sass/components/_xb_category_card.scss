@@ -1,0 +1,16 @@
+.xb-category-card{
+  width: 64px;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: $category-card-bg-color;
+  text-align: center;
+  font-size:16px;
+  position: relative;
+
+  a{
+    position: absolute;
+    top:50%;left:50%;transform:translate(-50%,-50%);
+    color: $color;
+  }
+}

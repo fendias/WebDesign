@@ -1,4 +1,4 @@
-//候选学霸
+//Project页候选学霸面板
 .xueba{
   @include flex-container();
 
@@ -125,5 +125,16 @@
     display: table;
     content: " ";
     clear: both;
+  }
+}
+
+//所有学霸页
+.xueba-nav-bar{
+  margin:{
+    top: 36px;
+  }
+
+  h2{
+    font-size:14px;
   }
 }

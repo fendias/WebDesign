@@ -2617,6 +2617,25 @@ ul.xb-list-panel li p {
   line-height: 28px;
 }
 
+.xb-category-card {
+  width: 64px;
+  height: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #E8E8E8;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
+.xb-category-card a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #333333;
+}
+
 .xb-panel {
   border-width: 0px;
 }
@@ -2972,6 +2991,109 @@ ul.comments-list li.comment .xueba-name {
   display: table;
   content: " ";
   clear: both;
+}
+
+.xueba-nav-bar {
+  margin-top: 36px;
+}
+.xueba-nav-bar h2 {
+  font-size: 14px;
+}
+
+.xueba-list {
+  margin-top: 16px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-display: normal;
+  -webkit-box-direction: normal;
+  -moz-box-lines: multiple;
+  -webkit-box-lines: multiple;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.xueba-list div:last-child {
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+ul.xueba-list-persons {
+  list-style: none;
+}
+ul.xueba-list-persons li {
+  border-radius: 0 0 1px 1px;
+  float: left;
+  margin: 0 0 18px 26px;
+  position: relative;
+}
+
+.xueba-brief-profile {
+  position: relative;
+  text-align: center;
+  width: 258px;
+  margin-top: 28px;
+  border: 1px solid #D9D9D9;
+  font-size: 13px;
+}
+.xueba-brief-profile .profile-photo {
+  margin-top: -24px;
+}
+.xueba-brief-profile .profile-username {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.xueba-brief-profile .profile-intro {
+  margin-top: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #D9D9D9;
+}
+.xueba-brief-profile .profile-abilities {
+  text-align: center;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6px;
+}
+.xueba-brief-profile .profile-abilities-group {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-display: normal;
+  -webkit-box-direction: normal;
+  -moz-box-lines: multiple;
+  -webkit-box-lines: multiple;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  width: 192px;
+}
+.xueba-brief-profile .profile-abilities .profile-ability {
+  width: 64px;
+}
+.xueba-brief-profile .profile-abilities .profile-ability .ability-score {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .carry-persons-display {

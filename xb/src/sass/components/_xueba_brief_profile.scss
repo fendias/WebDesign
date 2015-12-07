@@ -1,0 +1,83 @@
+//学霸
+.xueba-brief-profile{
+  position: relative;
+  text-align: center;
+  width: 258px;
+  margin: {
+    top: 28px;
+  }
+
+  border:1px solid $border-color;
+
+  font:{
+    size: 13px;
+  }
+
+  .profile-photo{
+    margin:{
+      top: -24px;
+    }
+  }
+
+  .profile-username{
+    font:{
+      size: 16px;
+      weight: bold;
+    }
+    margin:{
+      top: 2px;
+      bottom: 2px;
+    }
+  }
+
+  .profile-intro{
+    margin:{
+      top: 4px;
+      left: 10px;
+      right: 10px;
+      bottom: 4px;
+    }
+
+    padding:{
+      left: 40px;
+      right: 40px;
+      bottom:2px;
+    }
+
+    border:{
+      bottom: 1px solid $border-color;
+    }
+
+  }
+
+  .profile-abilities{
+
+    text-align: center;
+
+    margin:{
+      top: 8px;
+      left: auto;
+      right: auto;
+      bottom: 6px;
+    }
+
+    &-group{
+      @include flex-container();
+      margin:{
+        left: auto;
+        right: auto;
+      }
+      width: 192px;
+    }
+
+    .profile-ability{
+      width: 64px;
+      .ability-score{
+        font:{
+          size:20px;
+          weight:bold;
+        }
+      }
+    }
+  }
+}
