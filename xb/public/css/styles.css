@@ -2458,6 +2458,24 @@ ul.project-list li .status {
   padding: 6px;
 }
 
+.xb-divider {
+  position: relative;
+  height: 48px;
+  border-bottom: 1px dashed #000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.xb-divider span {
+  width: 380px;
+  height: 48px;
+  line-height: 48px;
+  display: inline-block;
+  background-color: #FFF;
+  position: absolute;
+  top: 24px;
+  left: 150px;
+}
+
 .xb-filter-panel {
   border: 1px solid #B4B4B4;
   padding: 10px;
