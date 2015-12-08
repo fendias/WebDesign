@@ -1,0 +1,24 @@
+.xb-divider{
+  position: relative;
+  height: 48px;
+  border:{
+    bottom: 1px dashed #000;
+  }
+  margin: {
+    bottom: 30px;
+  }
+  text-align: center;
+
+  span{
+    width: 300px;
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    background:{
+      color: #FFF;
+    }
+    position: absolute;
+    top: 24px;
+    left: 188px;
+  }
+}
