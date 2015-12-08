@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>气泡框</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+    .test {
+        width: 300px;
+        padding: 30px 20px;
+        margin-left: 60px;
+        background: #beceeb;
+        position: relative;
+    }
+
+    .test:before, .test:after{
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .test:before{
+        border-width: 20px;
+        border-style: solid;
+        border-color: #ffffff #beceeb #beceeb #ffffff;
+        left: -40px;
+        top: 40px;
+    }
+
+    .test:after{
+        border-width: 10px 20px;
+        border-style: dashed solid solid dashed;
+        border-color: transparent #ffffff #ffffff transparent;
+        left: -40px;
+        top: 60px;
+    }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="test"> CSS “边框法”实现气泡对话框效果一 </div>
+</body>
+
+</html>
