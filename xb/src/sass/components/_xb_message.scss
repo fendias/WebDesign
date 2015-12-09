@@ -1,0 +1,48 @@
+.xb-message{
+  @extend .clearfix;
+  @include flex-container();
+  margin:{
+    top: 16px;
+    bottom: 16px;
+    left: 0px;
+  }
+
+  .xb-message-content{
+    background:{
+      color: $border-color;
+    }
+    padding:{
+      top: 20px;
+      bottom: 20px;
+      left: 14px;
+      right: 14px;
+    }
+
+    p{
+      font:{
+        size: 14px;
+      }
+      margin:{
+        bottom: 2px;
+      }
+    }
+
+    .date{
+      font:{
+        size: 12px;
+      }
+    }
+  }
+}
+
+.xb-message-right{
+  .xb-message-user{
+    @include flex-order(2);
+  }
+}
+
+.xb-message-left{
+  .xb-message-user{
+    @include flex-order();
+  }
+}
