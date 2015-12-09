@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>气泡框</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+    .bubble-right {
+        /*width: 500px;
+        padding: 30px 20px;*/
+        border: 2px solid #beceeb;
+        position: relative;
+    }
+    
+    .bubble-right:before, .bubble-right:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        overflow: hidden;
+        position: absolute;
+    }
+    
+    .bubble-right:before {
+        border-width: 15px;
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent #beceeb;
+        right: -30px;
+        top: 10px;
+    }
+    
+    .bubble-right:after {
+        border-width: 15px;
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent #fff;
+        right: -27px;
+        top: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="bubble-right">CSS “边框法”实现气泡对话框效果二 </div>
+</body>
+
+</html>
