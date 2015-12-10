@@ -136,6 +136,10 @@ body {
 /*----------filters--------*/
 /*----------projects------*/
 /*---------bubble--------*/
+li {
+  margin-left: 0px;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?9o0hs1");
@@ -254,6 +258,18 @@ body {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+}
+
+.nav {
+  font-size: 15px;
+}
+.nav #message-hint {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.nav #username-top {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .wrapper {
