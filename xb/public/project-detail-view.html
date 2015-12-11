@@ -17,29 +17,51 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header  id="header" class="header clearfix">
-    <nav class="nav">
-        <ul>
-            <li><a href="#" class="logo">Logo</a></li>
-            <li><a href="#" class="active">所有项目</a></li>
-            <li><a href="#">所有学霸</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-        <span class="user-panel">
-            <a href="#" class="button button-small btn-add"><i class="icon-plus"></i>&nbsp;发布需求</a>
-            <a href="#" class="message"><i class="icon-envelope"></i></a>
-            <a href="#" class="user"><i class="icon-user"></i>&nbsp;admin</a>
-            <span class="timezone">
-                <span style="color: #666">我的时区:</span>
-                <select class="selectpicker" data-width="auto">
-                    <option>北京</option>
-                    <option>伦敦</option>
-                    <option>纽约</option>
-                </select>
-            </span>
-        </span>
-    </nav>
-</header>
+<nav class="navbar navbar-default">
+    <div class="container wrapper">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">所有项目 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">所有学霸</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <label>我的时区&nbsp;</label>
+                    <select id="timezoneSelectPicker" class="selectpicker" data-width="auto">
+                        <option>北京</option>
+                        <option>伦敦</option>
+                        <option>纽约</option>
+                    </select>
+                </div>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" id="message-hint"><i class="icon-envelope"></i></a></li>
+                <li><a href="#" id="username-top"><i class="icon-user"></i>&nbsp;admin</a></li>
+                <li>
+            </ul>
+            <form class="navbar-form navbar-right" role="create">
+                <button type="submit" class="btn btn-default"><i class="icon-plus"></i>&nbsp;发布需求</button>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
 <div class="wrapper">
     <div class="main-container">
 
@@ -48,7 +70,7 @@
                 <div class="project-cat"><a href="#">工商管理</a></div>
                 <div>
                     <header><h2 class="title"><a href="#">找靠谱英国代写老师 marketing论文2500words</a></h2></header>
-                    <div><span class="info"><a href="#">王晓华</a> &nbsp;&nbsp;2015-11-08 8:00发布</span>&nbsp;&nbsp;<span class="status">招募中</span></div>
+                    <div><span class="info"><a href="#">王晓华</a> &nbsp;&nbsp;2015-11-08 8:00发布</span>&nbsp;&nbsp;<span class="badge">招募中</span></div>
                 </div>
             </div>
             <!--end of project-info-->
@@ -97,7 +119,7 @@
         <div class="xb-panel margin-top">
             <div class="xb-panel-body">
                 <div style="text-align: center">
-                    <button class="button button-caution" style="display: inline-block" data-toggle="modal" data-target="#i_carry">我来Carry</button>
+                    <button class="button button-caution button-rounded" style="display: inline-block" data-toggle="modal" data-target="#i_carry">我来Carry</button>
                 </div>
             </div>
         </div>
@@ -137,7 +159,7 @@
                     </ul>
                 </div>
                 <div  class="xueba-part3">
-                    <button class="button button-xb button-caution center">选他</button>
+                    <button class="button button-xb button-caution button-rounded center">选他</button>
                 </div>
             </div>
             <!--end of xueba-->
@@ -165,7 +187,7 @@
                     </ul>
                 </div>
                 <div  class="xueba-part3">
-                    <button class="button button-xb button-caution center">选他</button>
+                    <button class="button button-xb button-caution button-rounded center">选他</button>
                 </div>
             </div>
             <!--end of xueba-->
@@ -175,7 +197,7 @@
             <div class="main-container">
                 <div class="post_comment margin-top">
                     <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
-                    <div><button class="button button-xb button-primary center">评论</button></div>
+                    <div><button class="button button-xb button-primary button-rounded center">评论</button></div>
                 </div>
                 <ul class="comments-list">
                     <li class="comment">

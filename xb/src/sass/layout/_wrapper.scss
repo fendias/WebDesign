@@ -33,13 +33,13 @@
       > a {
         display: inline-block;
         margin-left: 14px;
-        color: $color;
+        //color: $color;
         padding: 2px 6px;
         line-height: 24px;
 
         &.active{
-          background-color: $button-bg-default-color;
-          color: #FFF;
+          background-color: $button-bg-active-color;
+          color: $button-text-active-color;
           border-radius: 2px;
         }
       }
@@ -52,7 +52,7 @@
 
   &-head {
     height: 30px;
-    background-color: #EEEEEE;
+    background-color: $bg-default-color;
     padding-left: 10px;
     padding-right: 10px;
     border-bottom: 1px solid $box-border-color;
@@ -109,7 +109,7 @@ ul.project-list{
       a{
         position: absolute;
         top:50%;left:50%;transform:translate(-50%,-50%);
-        color: $color;
+        //color: $color;
       }
     }
 

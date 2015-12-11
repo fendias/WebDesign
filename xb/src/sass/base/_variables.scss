@@ -1,8 +1,10 @@
-$border-color: #D9D9D9;
-$box-border-color: #B4B4B4;
-$bg-default-color: #F6F6F6;
+$border-color: #e7e7e7;
+$box-border-color: #e7e7e7;
+$bg-default-color: #f8f8f8;
 $color: #333333;
 $button-bg-default-color: #666666;
+$button-bg-active-color: #F01400;
+$button-text-active-color: #FFF;
 $button-status-bg-color: #FF4351;
 $button-status-text-color: #fff;
 $text-default-color: #B4B4B4;
@@ -39,4 +41,4 @@ $category-card-bg-color: #E8E8E8;
 
 /*---------bubble--------*/
 $bubble-bg-default-color: #D9D9D9;
-$bubble-border-default-color: #D9D9D9;
+$bubble-border-default-color: $bg-default-color;

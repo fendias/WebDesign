@@ -59,7 +59,7 @@
 
   a{
     display: block;
-    color: $color;
+    //color: $color;
 
     padding: 2px 6px;
     margin:{
@@ -68,12 +68,8 @@
     line-height: 24px;
 
     &.active{
-      color: #FFF;
-
-      background:{
-        color: $button-bg-default-color;
-      }
-
+      background-color: $button-bg-active-color;
+      color: $button-text-active-color;
       border-radius: 2px;
     }
 
