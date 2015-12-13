@@ -260,6 +260,42 @@ li {
   text-align: center;
 }
 
+.navbar {
+  background: #f49484;
+  background: linear-gradient(to bottom, #f49484, #e78170);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.navbar-default {
+  background-color: #f49484;
+  border-color: #e88272;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background: linear-gradient(to bottom, #f05c58, #e05240);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background: linear-gradient(to bottom, #f05c58, #e05240);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.12);
+}
+
+.navbar .navbar-nav > li > a, .navbar-brand {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
 .nav {
   font-size: 15px;
 }
@@ -275,6 +311,7 @@ li {
 .navbar-form div.btn-group.bootstrap-select button.btn.btn-default {
   background-color: transparent;
   border-color: transparent;
+  color: #fff;
 }
 .navbar-form .btn-group.open .dropdown-toggle {
   box-shadow: none;
@@ -369,7 +406,7 @@ ul.project-list li header h2 {
   margin-bottom: 0px;
 }
 ul.project-list li header h2 a {
-  color: #333333;
+  color: #444444;
 }
 ul.project-list li header .deadline {
   float: right;
@@ -2365,6 +2402,35 @@ ul.project-list li .status {
   padding: 0 10px;
 }
 
+.xb-top-add-project {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid #f0514f;
+  border-radius: 4px;
+  background: #f05c58;
+  background: linear-gradient(to bottom, #f05c58, #e05240);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  outline: 0;
+  transition: all .2s ease-in-out;
+}
+
 .xb-info-label {
   color: #717171;
   font-size: 12px;
@@ -2605,7 +2671,6 @@ ul.project-list li .status {
   padding: 4px;
   position: relative;
   height: 64px;
-  color: #333333;
   border-bottom: 1px solid #e7e7e7;
 }
 .xb-form-head .xb-form-head-left {
@@ -2645,7 +2710,6 @@ ul.project-list li .status {
 }
 .xb-form-body .xb-form-group label:first-child {
   display: block;
-  color: #717171;
   margin-bottom: 4px;
 }
 .xb-form-body .xb-form-group textarea {
@@ -2727,14 +2791,14 @@ ul.xb-list-panel li {
   border-bottom: 1px solid #e7e7e7;
 }
 ul.xb-list-panel li strong {
-  color: #333333;
+  color: #444444;
   font-weight: bold;
 }
 ul.xb-list-panel li:last-child {
   border-bottom: none;
 }
 ul.xb-list-panel li p {
-  color: #333333;
+  color: #444444;
   margin-bottom: 6px;
   line-height: 28px;
 }
@@ -2796,14 +2860,14 @@ ul.xb-list-panel li p {
 .xb-panel-heading {
   padding-bottom: 6px;
   padding-left: 4px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #444444;
   margin-bottom: 2px;
 }
 .xb-panel-heading h2 {
   padding-left: 4px;
   margin: 0px;
   font-size: 14px;
-  color: #333333;
+  color: #444444;
 }
 .xb-panel-body {
   padding: 0px 0 6px 0;
@@ -2857,7 +2921,7 @@ ul.xb-list-panel li p {
   margin-bottom: 0px;
 }
 .project-info header h2 a {
-  color: #333333;
+  color: #444444;
 }
 .project-info header .handle-area {
   display: inline-block;
@@ -2961,7 +3025,7 @@ ul.comments-list li.comment {
   padding-bottom: 10px;
   border-top: 1px solid #e7e7e7;
   font-size: 14px;
-  color: #333333;
+  color: #444444;
 }
 ul.comments-list li.comment > img.user-avatar {
   display: inline-block;
@@ -2979,7 +3043,7 @@ ul.comments-list li.comment .xueba-name {
 }
 .deadline-panel > h5 {
   margin-bottom: 10px;
-  color: #333333;
+  color: #444444;
   font-size: 14px;
   font-weight: bold;
 }
@@ -3117,7 +3181,7 @@ ul.comments-list li.comment .xueba-name {
   list-style: none;
   line-height: 36px;
   font-size: 14px;
-  color: #333333;
+  color: #444444;
   padding-left: 10px;
   padding-right: 4px;
   margin-left: 0;
@@ -3251,7 +3315,7 @@ ul.xueba-list-persons li {
 
 .carry-persons-display {
   line-height: 64px;
-  color: #333333;
+  color: #444444;
   font-size: 14px;
 }
 .carry-persons-display span, .carry-persons-display a {

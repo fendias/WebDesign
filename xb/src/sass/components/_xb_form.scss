@@ -8,7 +8,7 @@
   padding: 4px;
   position: relative;
   height: 64px;
-  color: $color;
+  //color: $color;
   border:{
     bottom: 1px solid $border-color;
   }
@@ -60,7 +60,7 @@
 
     label:first-child{
       display: block;
-      color: $text-default-color;
+      //color: $text-default-color;
       margin:{
         bottom: 4px;
       }
