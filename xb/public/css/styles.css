@@ -310,7 +310,7 @@ li {
   line-height: 30px;
 }
 .projects-head span a {
-  color: #787d82;
+  color: #717171;
   display: inline-block;
   height: 31px;
 }
@@ -380,10 +380,10 @@ ul.project-list li header:after {
   clear: both;
 }
 ul.project-list li .info {
-  color: #787d82;
+  color: #717171;
 }
 ul.project-list li .info a {
-  color: #787d82;
+  color: #717171;
 }
 ul.project-list li .status {
   background-color: #FF4351;
@@ -2366,7 +2366,7 @@ ul.project-list li .status {
 }
 
 .xb-info-label {
-  color: #787d82;
+  color: #717171;
   font-size: 12px;
 }
 
@@ -2544,7 +2544,7 @@ ul.project-list li .status {
 }
 
 .xb-filter-panel-sub-title {
-  color: #787d82;
+  color: #717171;
 }
 .xb-filter-panel-sub-title > div {
   width: 100%;
@@ -2645,7 +2645,7 @@ ul.project-list li .status {
 }
 .xb-form-body .xb-form-group label:first-child {
   display: block;
-  color: #787d82;
+  color: #717171;
   margin-bottom: 4px;
 }
 .xb-form-body .xb-form-group textarea {
@@ -2699,13 +2699,28 @@ input[type=text].small {
   width: 112px;
 }
 
+.xb-label {
+  background: none;
+  display: inline-block;
+  padding: 2px 4px;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border: 1px solid #e78170;
+  color: #e78170;
+  text-shadow: none;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 1;
+  border-radius: 3px;
+}
+
 ul.xb-list-panel {
   padding: 12px;
 }
 ul.xb-list-panel li {
   list-style: none;
   line-height: 38px;
-  color: #787d82;
+  color: #717171;
   font-font-size: 14px;
   margin: 0;
   padding-left: 12px;
@@ -2779,9 +2794,10 @@ ul.xb-list-panel li p {
   border-width: 0px;
 }
 .xb-panel-heading {
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   padding-left: 4px;
   border-bottom: 1px solid #333333;
+  margin-bottom: 2px;
 }
 .xb-panel-heading h2 {
   padding-left: 4px;
@@ -2790,16 +2806,19 @@ ul.xb-list-panel li p {
   color: #333333;
 }
 .xb-panel-body {
-  padding: 6px 0 6px 0;
+  padding: 0px 0 6px 0;
 }
 .xb-panel-body ul li {
   font-size: 13px;
   list-style: none;
   padding-left: 4px;
-  padding-bottom: 2px;
-  padding-top: 16px;
+  padding-bottom: 8px;
+  padding-top: 9px;
   margin-left: 0;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px dashed #e7e7e7;
+}
+.xb-panel-body ul li:last-child {
+  border-bottom: none;
 }
 
 .project-info {
@@ -2847,7 +2866,7 @@ ul.xb-list-panel li p {
   bottom: 0;
 }
 .project-info header .handle-area a {
-  color: #787d82;
+  color: #717171;
 }
 .project-info header:after {
   display: table;
@@ -2855,10 +2874,10 @@ ul.xb-list-panel li p {
   clear: both;
 }
 .project-info .info {
-  color: #787d82;
+  color: #717171;
 }
 .project-info .info a {
-  color: #787d82;
+  color: #717171;
 }
 .project-info .status {
   background-color: #FF4351;
@@ -2871,7 +2890,7 @@ ul.xb-list-panel li p {
 .requires .require > h4, .requires .attach > h4 {
   font-size: 13px;
   border-bottom: 1px solid #b4b4b4;
-  color: #787d82;
+  color: #717171;
 }
 .requires .require p {
   font-size: 14px;
@@ -2887,7 +2906,7 @@ ul.xb-list-panel li p {
 .requires ul.attach-list li {
   list-style-type: none;
   margin-left: 16px;
-  color: #787d82;
+  color: #717171;
 }
 .requires ul.attach-list li a {
   font-size: 13px;
@@ -3069,7 +3088,7 @@ ul.comments-list li.comment .xueba-name {
           align-items: stretch;
 }
 .xueba-part1 .xueba-panel span {
-  color: #787d82;
+  color: #717171;
   font-size: 14px;
 }
 .xueba-part1 .xueba-panel p {
@@ -3263,7 +3282,7 @@ div.title h1 {
   margin-bottom: 8px;
 }
 div.title span {
-  color: #787d82;
+  color: #717171;
 }
 
 .carry-process {
@@ -3293,7 +3312,7 @@ div.title span {
   -webkit-flex: 1;
   flex: 1;
   text-align: center;
-  color: #787d82;
+  color: #717171;
   padding-top: 20px;
 }
 .carry-process-step {

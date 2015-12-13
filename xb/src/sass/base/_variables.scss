@@ -2,15 +2,20 @@ $border-color: #e7e7e7;
 $box-border-color: #e7e7e7;
 $bg-default-color: #f8f8f8;
 $color: #333333;
+
 $button-bg-default-color: #d9534f;
 $button-bg-active-color: #E7816F;
-$button-border-default-color: #D9D9D9;
-$button-border-active-color: #e78170;
-$button-text-active-color: #FFF;
-$button-text-default-color: #555;
-$button-status-bg-color: #FF4351;
-$button-status-text-color: #fff;
-$text-default-color: #787d82;
+$button-border-default-color: #D9D9D9; //默认按钮边框颜色
+$button-border-active-color: #e78170; //活动按钮边框颜色
+$button-text-active-color: #FFF; //活动按钮文字颜色
+$button-text-default-color: #555; //默认按钮文字颜色
+$button-status-bg-color: #FF4351; //默认状态按钮背景颜色
+$button-status-text-color: #fff; //默认状态按钮文字颜色
+
+$label-text-default-color: #e78170; //默认标签文字颜色
+$label-border-default-color: #e78170; //默认标签边框颜色
+
+$text-default-color: #717171;
 $text-disabled-color: #D9D9D9;
 
 /*.header*/
