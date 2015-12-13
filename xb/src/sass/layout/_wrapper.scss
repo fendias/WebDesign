@@ -15,38 +15,6 @@
   width: 234px;
 }
 
-.filter{
-  font-size: 14px;
-  padding: 8px;
-
-  .conditions{
-    padding: 8px;
-    .condition-title{
-      display:inline-block;
-      margin-right:14px;
-      color: $condition-title-color;
-    }
-
-    .items{
-      border-left: 1px solid $border-color;
-
-      > a {
-        display: inline-block;
-        margin-left: 14px;
-        //color: $color;
-        padding: 2px 6px;
-        line-height: 24px;
-
-        &.active{
-          background-color: $button-bg-active-color;
-          color: $button-text-active-color;
-          border-radius: 2px;
-        }
-      }
-    }
-  }
-}
-
 .projects{
   margin-top: $projects-mtop;
 
