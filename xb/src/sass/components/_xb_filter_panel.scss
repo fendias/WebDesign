@@ -9,17 +9,17 @@
   @include flex-container();
 
   margin:{
-    top: 12px;
-    bottom: 12px;
+    top: 4px;
+    bottom: 4px;
   }
 
   font:{
-    size: 14px;
+    size: 12px;
   }
 
-  border:{
-    bottom: 1px solid $border-color;
-  }
+  //border:{
+  //  bottom: 1px solid $border-color;
+  //}
 
   &:last-child{
     border:none;
@@ -31,11 +31,14 @@
   color: $text-default-color;
   > div{
     width: 100%;
-    border:{
-      right: 1px solid $border-color;
-    }
+    //border:{
+    //  right: 1px solid $border-color;
+    //}
     padding:{
-      right: 20px;
+      right: 10px;
+    }
+    margin:{
+      top: 5px;
     }
   }
 }
@@ -53,28 +56,34 @@
     }
     li{
       display: inline-block;
-      margin: 0 13px;
+      margin: 0 15px 5px 0;
+
+      &.active{
+        a{
+          background-color: $button-bg-active-color;
+          border-color: $button-border-active-color;
+          color: $button-text-active-color;
+
+          &:hover, &:active{
+            color: #fff;
+          }
+        }
+      }
     }
   }
 
   a{
     display: block;
     //color: $color;
+    text-decoration: none;
 
-    padding: 2px 6px;
-    margin:{
-      bottom: 10px;
-    }
-    line-height: 24px;
+    padding: 5px 10px;
+    border-radius: 14px;
 
-    &.active{
-      background-color: $button-bg-active-color;
-      color: $button-text-active-color;
-      border-radius: 2px;
-    }
-
-    &:hover, &:active{
-      color: red;
+    border: 1px solid $button-border-default-color;
+    color: $button-text-default-color;
+    &:hover,&:active{
+      color: #000;
     }
   }
 }

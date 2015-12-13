@@ -295,33 +295,6 @@ li {
   width: 234px;
 }
 
-.filter {
-  font-size: 14px;
-  padding: 8px;
-}
-.filter .conditions {
-  padding: 8px;
-}
-.filter .conditions .condition-title {
-  display: inline-block;
-  margin-right: 14px;
-  color: #B4B4B4;
-}
-.filter .conditions .items {
-  border-left: 1px solid #e7e7e7;
-}
-.filter .conditions .items > a {
-  display: inline-block;
-  margin-left: 14px;
-  padding: 2px 6px;
-  line-height: 24px;
-}
-.filter .conditions .items > a.active {
-  background-color: #F01400;
-  color: #FFF;
-  border-radius: 2px;
-}
-
 .projects {
   margin-top: 38px;
 }
@@ -337,7 +310,7 @@ li {
   line-height: 30px;
 }
 .projects-head span a {
-  color: #B4B4B4;
+  color: #787d82;
   display: inline-block;
   height: 31px;
 }
@@ -346,7 +319,7 @@ li {
   padding-right: 10px;
 }
 .projects-head span a.active {
-  color: #666666;
+  color: #d9534f;
   margin-top: -1px;
   background: #FFF;
   border: 1px solid #e7e7e7;
@@ -407,10 +380,10 @@ ul.project-list li header:after {
   clear: both;
 }
 ul.project-list li .info {
-  color: #B4B4B4;
+  color: #787d82;
 }
 ul.project-list li .info a {
-  color: #B4B4B4;
+  color: #787d82;
 }
 ul.project-list li .status {
   background-color: #FF4351;
@@ -2393,7 +2366,7 @@ ul.project-list li .status {
 }
 
 .xb-info-label {
-  color: #B4B4B4;
+  color: #787d82;
   font-size: 12px;
 }
 
@@ -2561,10 +2534,9 @@ ul.project-list li .status {
   -webkit-align-items: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  font-size: 14px;
-  border-bottom: 1px solid #e7e7e7;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 12px;
 }
 .xb-filter-panel-sub:last-child {
   border: none;
@@ -2572,12 +2544,12 @@ ul.project-list li .status {
 }
 
 .xb-filter-panel-sub-title {
-  color: #B4B4B4;
+  color: #787d82;
 }
 .xb-filter-panel-sub-title > div {
   width: 100%;
-  border-right: 1px solid #e7e7e7;
-  padding-right: 20px;
+  padding-right: 10px;
+  margin-top: 5px;
 }
 
 .xb-filter-panel-sub-selectors {
@@ -2591,21 +2563,26 @@ ul.project-list li .status {
 }
 .xb-filter-panel-sub-selectors ul li {
   display: inline-block;
-  margin: 0 13px;
+  margin: 0 15px 5px 0;
+}
+.xb-filter-panel-sub-selectors ul li.active a {
+  background-color: #E7816F;
+  border-color: #e78170;
+  color: #FFF;
+}
+.xb-filter-panel-sub-selectors ul li.active a:hover, .xb-filter-panel-sub-selectors ul li.active a:active {
+  color: #fff;
 }
 .xb-filter-panel-sub-selectors a {
   display: block;
-  padding: 2px 6px;
-  margin-bottom: 10px;
-  line-height: 24px;
-}
-.xb-filter-panel-sub-selectors a.active {
-  background-color: #F01400;
-  color: #FFF;
-  border-radius: 2px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 14px;
+  border: 1px solid #D9D9D9;
+  color: #555;
 }
 .xb-filter-panel-sub-selectors a:hover, .xb-filter-panel-sub-selectors a:active {
-  color: red;
+  color: #000;
 }
 
 .xb-filter-panel-1 {
@@ -2668,7 +2645,7 @@ ul.project-list li .status {
 }
 .xb-form-body .xb-form-group label:first-child {
   display: block;
-  color: #B4B4B4;
+  color: #787d82;
   margin-bottom: 4px;
 }
 .xb-form-body .xb-form-group textarea {
@@ -2728,7 +2705,7 @@ ul.xb-list-panel {
 ul.xb-list-panel li {
   list-style: none;
   line-height: 38px;
-  color: #B4B4B4;
+  color: #787d82;
   font-font-size: 14px;
   margin: 0;
   padding-left: 12px;
@@ -2870,7 +2847,7 @@ ul.xb-list-panel li p {
   bottom: 0;
 }
 .project-info header .handle-area a {
-  color: #B4B4B4;
+  color: #787d82;
 }
 .project-info header:after {
   display: table;
@@ -2878,10 +2855,10 @@ ul.xb-list-panel li p {
   clear: both;
 }
 .project-info .info {
-  color: #B4B4B4;
+  color: #787d82;
 }
 .project-info .info a {
-  color: #B4B4B4;
+  color: #787d82;
 }
 .project-info .status {
   background-color: #FF4351;
@@ -2894,7 +2871,7 @@ ul.xb-list-panel li p {
 .requires .require > h4, .requires .attach > h4 {
   font-size: 13px;
   border-bottom: 1px solid #b4b4b4;
-  color: #B4B4B4;
+  color: #787d82;
 }
 .requires .require p {
   font-size: 14px;
@@ -2910,7 +2887,7 @@ ul.xb-list-panel li p {
 .requires ul.attach-list li {
   list-style-type: none;
   margin-left: 16px;
-  color: #B4B4B4;
+  color: #787d82;
 }
 .requires ul.attach-list li a {
   font-size: 13px;
@@ -3092,7 +3069,7 @@ ul.comments-list li.comment .xueba-name {
           align-items: stretch;
 }
 .xueba-part1 .xueba-panel span {
-  color: #B4B4B4;
+  color: #787d82;
   font-size: 14px;
 }
 .xueba-part1 .xueba-panel p {
@@ -3286,7 +3263,7 @@ div.title h1 {
   margin-bottom: 8px;
 }
 div.title span {
-  color: #B4B4B4;
+  color: #787d82;
 }
 
 .carry-process {
@@ -3316,7 +3293,7 @@ div.title span {
   -webkit-flex: 1;
   flex: 1;
   text-align: center;
-  color: #B4B4B4;
+  color: #787d82;
   padding-top: 20px;
 }
 .carry-process-step {
