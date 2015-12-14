@@ -11,8 +11,17 @@
   padding: 0 10px;
 }
 
-.button-danger{
+.button-xb-danger{
+ background: {
+   color: $button-border-active-color;
+ }
+  color: $button-text-active-color;
 
+  &:hover,&:focus{
+    background-color: $button-bg-active-color;
+    border-color: $button-border-active-color;
+    color: $button-text-active-color;
+  }
 }
 
 .xb-top-add-project{

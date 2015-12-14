@@ -307,6 +307,9 @@ li {
   padding-left: 6px;
   padding-right: 6px;
 }
+.nav a i {
+  vertical-align: middle;
+}
 
 .navbar-form div.btn-group.bootstrap-select button.btn.btn-default {
   background-color: transparent;
@@ -2400,6 +2403,16 @@ ul.project-list li .status {
 .button-xb-sm {
   font-weight: bold;
   padding: 0 10px;
+}
+
+.button-xb-danger {
+  background-color: #e78170;
+  color: #FFF;
+}
+.button-xb-danger:hover, .button-xb-danger:focus {
+  background-color: #E7816F;
+  border-color: #e78170;
+  color: #FFF;
 }
 
 .xb-top-add-project {
