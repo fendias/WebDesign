@@ -1,83 +1,24 @@
 /*空心带右箭头气泡*/
 .bubble-right {
-  /*width: 500px;
-  padding: 30px 20px;*/
-  margin: {
-    right: 20px;
-  }
-  border: 2px solid $bubble-border-default-color;
-  position: relative;
-}
-
-.bubble-right:before, .bubble-right:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  overflow: hidden;
-  position: absolute;
-}
-
-.bubble-right:before {
-  border-width: 15px;
-  border-style: dashed dashed dashed solid;
-  border-color: transparent transparent transparent $bubble-border-default-color;
-  right: -30px;
-  top: 6px;
-}
-
-.bubble-right:after {
-  border-width: 15px;
-  border-style: dashed dashed dashed solid;
-  border-color: transparent transparent transparent #fff;
-  right: -27px;
-  top: 6px;
+  @include bubble-right($bubble-border-default-color, $text-default-color);
 }
 
 /*空心带左箭头气泡*/
 .bubble-left {
   /*width: 500px;
   padding: 30px 20px;*/
-  margin: {
-    left: 20px;
-  }
-  border: 2px solid $bubble-border-default-color;
-  position: relative;
-}
-
-.bubble-left:before, .bubble-left:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  font-size: 0;
-  overflow: hidden;
-  position: absolute;
-}
-
-.bubble-left:before {
-  border-width: 15px;
-  border-style: dashed solid dashed dashed;
-  border-color: transparent $bubble-border-default-color transparent transparent;
-  left: -30px;
-  top: 6px;
-}
-
-.bubble-left:after {
-  border-width: 15px;
-  border-style: dashed solid dashed dashed;
-  border-color: transparent  #fff transparent transparent;
-  left: -27px;
-  top: 6px;
+  @include bubble-left($bubble-border-default-color, $text-default-color);
 }
 
 /*实心气泡*/
 .bubble-full {
-  background:{
-    color: $bubble-bg-default-color;
-  }
-  &:after{
-    display: none;
-  }
+  @include bubble-full($bubble-border-default-color);
+}
+
+.bubble-right-me{
+  @include bubble-right($bubble-me-border-default-color, $text-default-color);
+}
+
+.bubble-full-me {
+  @include bubble-full($bubble-me-border-default-color);
 }

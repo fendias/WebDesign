@@ -2290,8 +2290,8 @@ ul.project-list li .status {
   margin-right: 20px;
   border: 2px solid #f8f8f8;
   position: relative;
+  color: #717171;
 }
-
 .bubble-right:before, .bubble-right:after {
   content: "";
   display: block;
@@ -2301,7 +2301,6 @@ ul.project-list li .status {
   overflow: hidden;
   position: absolute;
 }
-
 .bubble-right:before {
   border-width: 15px;
   border-style: dashed dashed dashed solid;
@@ -2309,7 +2308,6 @@ ul.project-list li .status {
   right: -30px;
   top: 6px;
 }
-
 .bubble-right:after {
   border-width: 15px;
   border-style: dashed dashed dashed solid;
@@ -2325,8 +2323,8 @@ ul.project-list li .status {
   margin-left: 20px;
   border: 2px solid #f8f8f8;
   position: relative;
+  color: #717171;
 }
-
 .bubble-left:before, .bubble-left:after {
   content: "";
   display: block;
@@ -2336,7 +2334,6 @@ ul.project-list li .status {
   overflow: hidden;
   position: absolute;
 }
-
 .bubble-left:before {
   border-width: 15px;
   border-style: dashed solid dashed dashed;
@@ -2344,7 +2341,6 @@ ul.project-list li .status {
   left: -30px;
   top: 6px;
 }
-
 .bubble-left:after {
   border-width: 15px;
   border-style: dashed solid dashed dashed;
@@ -2355,9 +2351,48 @@ ul.project-list li .status {
 
 /*实心气泡*/
 .bubble-full {
-  background-color: #D9D9D9;
+  background-color: #f8f8f8;
 }
 .bubble-full:after {
+  display: none;
+}
+
+.bubble-right-me {
+  /*width: 500px;
+  padding: 30px 20px;*/
+  margin-right: 20px;
+  border: 2px solid #e7e7e7;
+  position: relative;
+  color: #717171;
+}
+.bubble-right-me:before, .bubble-right-me:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  position: absolute;
+}
+.bubble-right-me:before {
+  border-width: 15px;
+  border-style: dashed dashed dashed solid;
+  border-color: transparent transparent transparent #e7e7e7;
+  right: -30px;
+  top: 6px;
+}
+.bubble-right-me:after {
+  border-width: 15px;
+  border-style: dashed dashed dashed solid;
+  border-color: transparent transparent transparent #fff;
+  right: -27px;
+  top: 6px;
+}
+
+.bubble-full-me {
+  background-color: #e7e7e7;
+}
+.bubble-full-me:after {
   display: none;
 }
 
@@ -2781,7 +2816,6 @@ ul.xb-list-panel li p {
   margin-left: 0px;
 }
 .xb-message .xb-message-content {
-  background-color: #f8f8f8;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 14px;
@@ -3033,7 +3067,7 @@ ul.comments-list li.comment .xueba-name {
 }
 .inivite-xueba #xueba_name {
   width: 164px;
-  height: 36px;
+  height: 30px;
   font-size: 16px;
 }
 .inivite-xueba button.button {
@@ -3053,9 +3087,6 @@ ul.comments-list li.comment .xueba-name {
 .inivite-xueba .invited span.invited-list a {
   display: inline-block;
   margin-left: 2px;
-}
-.inivite-xueba .invited span.invited-list i {
-  font-size: 24px;
 }
 
 .xueba {

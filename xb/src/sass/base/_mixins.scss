@@ -113,3 +113,85 @@
   -webkit-order: $flex-order;
   order: $flex-order;
 }
+
+//气泡
+@mixin bubble-full($bubble-color){
+  background:{
+    color: $bubble-color;
+  }
+  &:after{
+    display: none;
+  }
+}
+
+@mixin bubble-right($bubble-color, $bubble-text-color){
+  /*width: 500px;
+  padding: 30px 20px;*/
+  margin: {
+    right: 20px;
+  }
+  border: 2px solid $bubble-color;
+  position: relative;
+  color: $bubble-text-color;
+
+  &:before, &:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  &:before{
+    border-width: 15px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent $bubble-color;
+    right: -30px;
+    top: 6px;
+  }
+
+  &:after{
+    border-width: 15px;
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent #fff;
+    right: -27px;
+    top: 6px;
+  }
+}
+
+@mixin bubble-left($bubble-color, $bubble-text-color){
+  margin: {
+    left: 20px;
+  }
+  border: 2px solid $bubble-color;
+  position: relative;
+  color: $bubble-text-color;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
+  &:before {
+    border-width: 15px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent $bubble-color transparent transparent;
+    left: -30px;
+    top: 6px;
+  }
+
+  &:after{
+    border-width: 15px;
+    border-style: dashed solid dashed dashed;
+    border-color: transparent  #fff transparent transparent;
+    left: -27px;
+    top: 6px;
+  }
+}
