@@ -35,10 +35,11 @@
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">所有项目 <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">所有学霸</a></li>
+                <li><a href="#" class="xb-top-add-project">发布需求</a></li>
                 <li><a href="#">FAQ</a></li>
             </ul>
 
-            <form class="navbar-form navbar-right">
+            <form id="timezone-form" class="nav navbar-nav navbar-form">
                 <div class="form-group">
                     <select id="timezoneSelectPicker" class="selectpicker" data-width="auto">
                         <option>北京</option>
@@ -47,20 +48,21 @@
                     </select>
                 </div>
             </form>
-
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#" id="message-hint"><i class="icon-envelope"></i></a></li>
-                <li><a href="#" id="username-top"><i class="icon-user"></i>&nbsp;admin</a></li>
-                <li>
+                <li class="dropdown">
+                    <a href="#" id="username-top" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-user"></i>&nbsp;admin <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">用户设置</a></li>
+                        <li><a href="#">修改密码</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">退出</a></li>
+                    </ul>
+                </li>
             </ul>
-            <form class="navbar-form navbar-right" role="create">
-                <button type="submit" class="xb-top-add-project">发布需求</button>
-            </form>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
-
 <div class="wrapper">
     <div class="main-container">
 

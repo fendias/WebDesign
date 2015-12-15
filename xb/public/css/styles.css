@@ -260,42 +260,6 @@ li {
   text-align: center;
 }
 
-.navbar {
-  background: #f49484;
-  background: linear-gradient(to bottom, #f49484, #e78170);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
-  border: 1px solid transparent;
-  border-radius: 0;
-}
-
-.navbar-default {
-  background-color: #f49484;
-  border-color: #e88272;
-}
-.navbar-default .navbar-brand {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a {
-  color: #ffffff;
-}
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #ffffff;
-  background: linear-gradient(to bottom, #f05c58, #e05240);
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.12);
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  color: #ffffff;
-  background: linear-gradient(to bottom, #f05c58, #e05240);
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.12);
-}
-
-.navbar .navbar-nav > li > a, .navbar-brand {
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-}
-
 .nav {
   font-size: 15px;
 }
@@ -314,10 +278,15 @@ li {
 .navbar-form div.btn-group.bootstrap-select button.btn.btn-default {
   background-color: transparent;
   border-color: transparent;
-  color: #fff;
+  font-size: 15px;
 }
 .navbar-form .btn-group.open .dropdown-toggle {
   box-shadow: none;
+}
+
+#timezone-form {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .wrapper {
@@ -2416,32 +2385,7 @@ ul.project-list li .status {
 }
 
 .xb-top-add-project {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid #f0514f;
-  border-radius: 4px;
-  background: #f05c58;
-  background: linear-gradient(to bottom, #f05c58, #e05240);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.15);
-  color: #fff;
-  font-size: 14px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-  outline: 0;
-  transition: all .2s ease-in-out;
+  color: #D9534F !important;
 }
 
 .xb-info-label {
