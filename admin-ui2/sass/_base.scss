@@ -6,9 +6,13 @@ html{
 }
 body{
     //color: $default-color;
-    padding-top: $navbar-height;
+    //padding-top: $navbar-height;
     font-family: "arial","microsoft yahei","helvetica","sans-serif";
     margin-bottom: -$footer-height;
+}
+
+body.body-padding-top{
+    padding-top: $navbar-height;
 }
 
 a{

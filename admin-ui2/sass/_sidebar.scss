@@ -4,7 +4,7 @@
     background: {
         color: $sidebar-bg-color;
     }
-    @include stretch-y($navbar-height, $footer-height);
+    @include stretch-y($navbar-height);
     overflow-y: auto;
 }
 
