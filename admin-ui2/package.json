@@ -4,7 +4,9 @@
   "description": "后台管理界面",
   "main": "index.js",
   "dependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.3.1",
+    "gulp-open": "^1.0.0"
   },
   "devDependencies": {
     "del": "^1.2.0",
