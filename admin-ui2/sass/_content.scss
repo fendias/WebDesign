@@ -1,5 +1,5 @@
 .content{
-    @include stretch-y($navbar-height);
+    @include stretch-y($navbar-height, $footer-height);
     @include stretch-x($sidebar-width, 0);
     overflow-y: none;
 }

@@ -8,11 +8,13 @@ $sidebar-icon-width: 36px;
 $sidebar-menu-title-font-size: 14px;
 //sidebar背景色
 $sidebar-bg-color: #F5F5F5;
-$sidebar-color: #00ACED;
+$sidebar-color: #99CC33;
 $sidebar-color-active: #fff;
-$sidebar-bg-color-active: #00ACED;
+$sidebar-bg-color-active: $sidebar-color;
 $icon-color: $sidebar-color;
 $icon-color-active: $sidebar-color-active;
 
 //footer高度
 $footer-height: 26px;
+
+$boss-color: #666;
